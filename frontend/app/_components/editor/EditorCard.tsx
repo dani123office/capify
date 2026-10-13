@@ -202,7 +202,7 @@ export function EditorCard() {
 
               {/* Template Dropdown Modal */}
               {pickerOpen && (
-                <div className="absolute left-0 top-full z-40 mt-3 w-84 rounded-2xl border border-slate-200 bg-white p-3 shadow-2xl">
+                <div className="absolute left-0 top-full z-50 mt-3 w-84 rounded-2xl border border-slate-200 bg-white p-3 shadow-2xl">
                   <div className="mb-2 flex items-center justify-between px-1">
                     <span className="text-xs font-bold text-slate-900">Choose Caption Style</span>
                     <button

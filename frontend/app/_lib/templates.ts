@@ -48,15 +48,15 @@ export const TEMPLATE_FAMILIES: { id: string; label: string; badge: string }[] =
 
 export const TEMPLATES: Template[] = [
   {
-    id: "kumar",
-    name: "Kumar",
-    family: "Behind the Person",
+    id: "reach-counter",
+    name: "Reach Counter",
+    family: "Dynamic",
     badge: "POPULAR",
-    font: "Playfair Display",
+    font: "Montserrat Black",
     accentFont: "Poppins",
-    treatment: "Behind subject • red serif",
-    poster: MEDIA.popular.card1_reach,
-    video: MEDIA.behind.kumar_video,
+    treatment: "Counter • viral views",
+    poster: MEDIA.reachCounter.poster,
+    video: MEDIA.reachCounter.video,
     pro: true,
   },
   {
@@ -67,8 +67,8 @@ export const TEMPLATES: Template[] = [
     font: "Montserrat Black",
     accentFont: "Montserrat",
     treatment: "Glow & banner",
-    poster: MEDIA.popular.card2_magenta,
-    video: MEDIA.behind.mix_video,
+    poster: MEDIA.magentaEstate.poster,
+    video: MEDIA.magentaEstate.video,
   },
   {
     id: "afterglow-mix",
@@ -78,8 +78,8 @@ export const TEMPLATES: Template[] = [
     font: "Josefin Sans",
     accentFont: "Josefin Sans",
     treatment: "Kinetic glow",
-    poster: MEDIA.popular.card3_afterglow,
-    video: MEDIA.behind.neon_video,
+    poster: MEDIA.afterglow.poster,
+    video: MEDIA.afterglow.video,
   },
   {
     id: "discipline",
@@ -89,8 +89,8 @@ export const TEMPLATES: Template[] = [
     font: "Didot / Serif",
     accentFont: "Inter",
     treatment: "Magazine 3D stack",
-    poster: MEDIA.popular.card4_discipline,
-    video: MEDIA.behind.split_video,
+    poster: MEDIA.discipline.poster,
+    video: MEDIA.discipline.video,
     pro: true,
   },
   {
@@ -101,8 +101,8 @@ export const TEMPLATES: Template[] = [
     font: "Bebas Neue",
     accentFont: "Bebas Neue",
     treatment: "3D spatial text",
-    poster: MEDIA.depth.poster,
-    video: MEDIA.depth.video,
+    poster: MEDIA.dimensionStory.poster,
+    video: MEDIA.dimensionStory.video,
     pro: true,
   },
   {
