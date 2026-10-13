@@ -1,0 +1,119 @@
+import subprocess
+import cv2
+import numpy as np
+from .captions import parse_srt
+from .renderer import CaptionRenderer
+from .segmentation import get_segmenter
+from .templates import get_template
+
+
+import shutil
+
+
+def _get_ffmpeg_bin() -> str:
+    bin_path = shutil.which("ffmpeg")
+    if bin_path:
+        return bin_path
+    try:
+        import imageio_ffmpeg
+        return imageio_ffmpeg.get_ffmpeg_exe()
+    except Exception:
+        return "ffmpeg"
+
+
+def _blend_estate_texture(base_bgr: np.ndarray, text_layer, blend_strength: float = 0.40):
+    """Infuses video luminance texture into text layer for Whitestair's iconic organic textured look."""
+    from PIL import Image
+    arr = np.asarray(text_layer, dtype=np.float32).copy()
+    a = arr[..., 3]
+    text_mask = a > 15
+    if not np.any(text_mask):
+        return text_layer
+
+    # Video background luminance in BGR: 0.114*B + 0.587*G + 0.299*R
+    lum = (0.114 * base_bgr[..., 0] + 0.587 * base_bgr[..., 1] + 0.299 * base_bgr[..., 2]) / 255.0
+    # Normalized contrast curve
+    texture = np.clip(0.5 + (lum - 0.4) * 1.3, 0.45, 1.45)[..., None]
+    
+    # Apply texture multiplier only where text exists
+    arr[..., :3] = np.where(text_mask[..., None], np.clip(arr[..., :3] * texture, 0, 255), arr[..., :3])
+    return Image.fromarray(arr.astype(np.uint8), mode="RGBA")
+
+
+def _over(base: np.ndarray, layer) -> np.ndarray:
+    """Alpha-composite an RGBA PIL layer (RGB order) onto a BGR float frame."""
+    arr = np.asarray(layer, dtype=np.float32)
+    a = arr[..., 3:4] / 255.0
+    return base * (1 - a) + arr[..., 2::-1] * a
+
+
+def _detect_head_y(alpha: np.ndarray, default_ratio: float = 0.19) -> float:
+    """Auto-detects top of head from mask, placing text behind head crown with sweet spot fallback."""
+    H = alpha.shape[0]
+    row_sums = np.sum(alpha > 0.45, axis=1)
+    valid_rows = np.where(row_sums > 25)[0]
+    if len(valid_rows) > 0:
+        top_y = float(valid_rows[0])
+        # Place text anchor around crown level (occluded by upper head)
+        anchor = np.clip(top_y + 0.10 * H, 0.12 * H, 0.35 * H)
+        return float(anchor)
+    return float(default_ratio * H)
+
+
+def run(video: str, srt: str, template: str, out: str, segmenter: str = "mediapipe",
+        smooth: float = 0.5, crf: int = 18):
+    tpl, cues, seg = get_template(template), parse_srt(srt), get_segmenter(segmenter)
+    cap = cv2.VideoCapture(video)
+    W, H = int(cap.get(3)), int(cap.get(4))
+    fps = cap.get(cv2.CAP_PROP_FPS) or 30
+    rend = CaptionRenderer(tpl, W, H)
+    ffmpeg_bin = _get_ffmpeg_bin()
+    default_y_ratio = tpl.get("keyword", {}).get("y_ratio", 0.19)
+
+    ff = subprocess.Popen([
+        ffmpeg_bin, "-y", "-loglevel", "error",
+        "-f", "rawvideo", "-pix_fmt", "bgr24", "-s", f"{W}x{H}", "-r", str(fps), "-i", "-",
+        "-i", video, "-map", "0:v", "-map", "1:a?",
+        "-c:v", "libx264", "-preset", "medium", "-crf", str(crf), "-pix_fmt", "yuv420p",
+        "-c:a", "copy", "-shortest", out], stdin=subprocess.PIPE)
+
+    prev, smoothed_head_y, i = None, None, 0
+    while True:
+        ok, frame = cap.read()
+        if not ok:
+            break
+        t = i / fps
+        i += 1
+        cue = next((c for c in cues if c.start <= t < c.end), None)
+        if cue is None:                      # no caption -> skip segmentation (fast path)
+            ff.stdin.write(frame.tobytes())
+            prev = None
+            smoothed_head_y = None
+            continue
+
+        alpha = seg.mask(frame)
+        if prev is not None and smooth > 0:  # light temporal smoothing vs. edge flicker
+            alpha = smooth * prev + (1 - smooth) * alpha
+        prev = alpha
+
+        # Auto-Head Tracking with smooth damping
+        target_head_y = _detect_head_y(alpha, default_y_ratio)
+        if smoothed_head_y is None:
+            smoothed_head_y = target_head_y
+        else:
+            smoothed_head_y = 0.85 * smoothed_head_y + 0.15 * target_head_y
+
+        behind, front = rend.render(cue, t, head_y=smoothed_head_y)
+        if tpl.get("blend_texture", True):
+            behind = _blend_estate_texture(frame, behind, blend_strength=tpl.get("blend_strength", 0.40))
+        f = frame.astype(np.float32)
+        comp = _over(f, behind)                       # background -> text
+        m = alpha[..., None]
+        comp = comp * (1 - m) + f * m                 # person on top
+        comp = _over(comp, front)                     # optional front text
+        ff.stdin.write(np.clip(comp, 0, 255).astype(np.uint8).tobytes())
+
+    cap.release()
+    ff.stdin.close()
+    ff.wait()
+    print(f"[{template}] done -> {out}")
