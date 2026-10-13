@@ -134,7 +134,7 @@ export function Header() {
               <button
                 type="button"
                 onClick={() => setAuthOpen(true)}
-                className="rounded-xl bg-brand px-4 py-2 text-sm font-semibold text-white shadow-md shadow-brand/20 transition hover:bg-brand-600 active:scale-95 cursor-pointer"
+                className="rounded-xl bg-[#4338ca] px-5 py-2 text-sm font-semibold text-white shadow-xs transition hover:bg-[#3730a3] active:scale-95 cursor-pointer"
               >
                 Sign in
               </button>

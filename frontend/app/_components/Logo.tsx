@@ -1,4 +1,3 @@
-import { Sparkles } from "lucide-react";
 import Link from "next/link";
 
 export function Logo({ className = "" }: { className?: string }) {
@@ -6,12 +5,14 @@ export function Logo({ className = "" }: { className?: string }) {
     <Link
       href="/"
       aria-label="Capify home"
-      className={`flex items-center gap-2 text-ink transition hover:opacity-80 ${className}`}
+      className={`flex items-center gap-2.5 text-slate-900 transition hover:opacity-85 ${className}`}
     >
-      <span className="grid h-8 w-8 place-items-center rounded-xl bg-brand text-white shadow-sm shadow-indigo-500/30">
-        <Sparkles className="h-4 w-4" strokeWidth={2.5} />
+      <span className="relative flex h-6 w-6 items-center justify-center rounded-full border-[2.2px] border-slate-900 bg-transparent">
+        <span className="h-2.5 w-2.5 rounded-full bg-slate-900" />
       </span>
-      <span className="text-xl font-bold lowercase tracking-tight">capify</span>
+      <span className="text-[19px] font-bold lowercase tracking-tight text-slate-900">
+        capify
+      </span>
     </Link>
   );
 }

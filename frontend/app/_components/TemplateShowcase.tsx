@@ -7,6 +7,7 @@ import { TemplateCard } from "./templates/TemplateCard";
 
 const FAMILY_BY_TAB: Record<string, Template["family"]> = {
   behind_person: "Behind the Person",
+  real_estate: "Behind the Person",
   spatial: "Spatial",
   ai_edits: "AI Edits",
   multiline: "Multiline",
@@ -19,6 +20,7 @@ const FAMILY_BY_TAB: Record<string, Template["family"]> = {
 
 const FAMILY_COPY: Record<string, string> = {
   popular: "Community favourites, trending styles, and something worth trying.",
+  real_estate: "Clean styles and property tours with subtle spatial tracking.",
   behind_person: "Words locked behind the speaker for a layered depth look.",
   spatial: "3D spatial text that pushes and pulls with the beat.",
   ai_edits: "One-click edits that cut the clip to the caption rhythm.",

@@ -40,15 +40,10 @@ export type Template = {
 
 export const TEMPLATE_FAMILIES: { id: string; label: string; badge: string }[] = [
   { id: "popular", label: "Popular", badge: "AI" },
-  { id: "behind_person", label: "Behind the Person", badge: "PRO" },
-  { id: "spatial", label: "Spatial", badge: "3D" },
   { id: "ai_edits", label: "AI Edits", badge: "AI" },
-  { id: "multiline", label: "Multiline", badge: "AI" },
-  { id: "dynamic", label: "Dynamic", badge: "AI" },
-  { id: "editorial", label: "Editorial", badge: "AI" },
-  { id: "creators", label: "Creators", badge: "AI" },
-  { id: "desi", label: "Desi", badge: "HI" },
-  { id: "social", label: "Social", badge: "AI" },
+  { id: "real_estate", label: "Real Estate", badge: "AI" },
+  { id: "spatial", label: "Spatial", badge: "AI" },
+  { id: "behind_person", label: "Behind the Person", badge: "AI" },
 ];
 
 export const TEMPLATES: Template[] = [
@@ -60,8 +55,8 @@ export const TEMPLATES: Template[] = [
     font: "Playfair Display",
     accentFont: "Poppins",
     treatment: "Behind subject • red serif",
-    poster: MEDIA.kumar.poster,
-    video: MEDIA.kumar.video,
+    poster: MEDIA.popular.card1_reach,
+    video: MEDIA.behind.kumar_video,
     pro: true,
   },
   {
@@ -72,8 +67,8 @@ export const TEMPLATES: Template[] = [
     font: "Montserrat Black",
     accentFont: "Montserrat",
     treatment: "Glow & banner",
-    poster: MEDIA.neon.poster,
-    video: MEDIA.neon.video,
+    poster: MEDIA.popular.card2_magenta,
+    video: MEDIA.behind.mix_video,
   },
   {
     id: "afterglow-mix",
@@ -83,8 +78,8 @@ export const TEMPLATES: Template[] = [
     font: "Josefin Sans",
     accentFont: "Josefin Sans",
     treatment: "Kinetic glow",
-    poster: MEDIA.mix.poster,
-    video: MEDIA.mix.video,
+    poster: MEDIA.popular.card3_afterglow,
+    video: MEDIA.behind.neon_video,
   },
   {
     id: "discipline",
@@ -94,8 +89,8 @@ export const TEMPLATES: Template[] = [
     font: "Didot / Serif",
     accentFont: "Inter",
     treatment: "Magazine 3D stack",
-    poster: MEDIA.split.poster,
-    video: MEDIA.split.video,
+    poster: MEDIA.popular.card4_discipline,
+    video: MEDIA.behind.split_video,
     pro: true,
   },
   {
