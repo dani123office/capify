@@ -8,9 +8,9 @@ import { FaqAccordion } from "./_components/sections/FaqAccordion";
 import { CtaBand } from "./_components/sections/CtaBand";
 
 const STATS = [
-  { value: "16", label: "Caption templates" },
-  { value: "9", label: "Template families" },
-  { value: "35+", label: "Bundled fonts" },
+  { value: "230+", label: "Caption templates" },
+  { value: "14", label: "Template families" },
+  { value: "85+", label: "Bundled fonts" },
   { value: "9:16", label: "1080×1920 export" },
 ];
 

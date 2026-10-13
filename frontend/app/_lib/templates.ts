@@ -34,6 +34,7 @@ export type Template = {
   /** Short chip describing the motion / treatment. */
   treatment: string;
   poster: string;
+  video?: string;
   pro?: boolean;
 };
 
@@ -59,7 +60,8 @@ export const TEMPLATES: Template[] = [
     font: "Playfair Display",
     accentFont: "Poppins",
     treatment: "Behind subject • red serif",
-    poster: MEDIA.realEstate.reachCounter,
+    poster: MEDIA.kumar.poster,
+    video: MEDIA.kumar.video,
     pro: true,
   },
   {
@@ -70,7 +72,8 @@ export const TEMPLATES: Template[] = [
     font: "Montserrat Black",
     accentFont: "Montserrat",
     treatment: "Glow & banner",
-    poster: MEDIA.realEstate.magentaEstate,
+    poster: MEDIA.neon.poster,
+    video: MEDIA.neon.video,
   },
   {
     id: "afterglow-mix",
@@ -80,7 +83,8 @@ export const TEMPLATES: Template[] = [
     font: "Josefin Sans",
     accentFont: "Josefin Sans",
     treatment: "Kinetic glow",
-    poster: MEDIA.templates.afterglowMix,
+    poster: MEDIA.mix.poster,
+    video: MEDIA.mix.video,
   },
   {
     id: "discipline",
@@ -90,7 +94,8 @@ export const TEMPLATES: Template[] = [
     font: "Didot / Serif",
     accentFont: "Inter",
     treatment: "Magazine 3D stack",
-    poster: MEDIA.contentAware.cutout,
+    poster: MEDIA.split.poster,
+    video: MEDIA.split.video,
     pro: true,
   },
   {
@@ -101,7 +106,8 @@ export const TEMPLATES: Template[] = [
     font: "Bebas Neue",
     accentFont: "Bebas Neue",
     treatment: "3D spatial text",
-    poster: MEDIA.realEstate.dimensionStory,
+    poster: MEDIA.depth.poster,
+    video: MEDIA.depth.video,
     pro: true,
   },
   {
@@ -112,7 +118,8 @@ export const TEMPLATES: Template[] = [
     font: "Playfair Display",
     accentFont: "Inter",
     treatment: "Cinematic warmth",
-    poster: MEDIA.contentAware.goldenHour,
+    poster: MEDIA.yellow.poster,
+    video: MEDIA.yellow.video,
   },
   {
     id: "ghostline",
@@ -122,7 +129,8 @@ export const TEMPLATES: Template[] = [
     font: "Anton",
     accentFont: "Anton",
     treatment: "Stacked outline",
-    poster: MEDIA.contentAware.ghostline,
+    poster: MEDIA.blue.poster,
+    video: MEDIA.blue.video,
   },
   {
     id: "aura",
@@ -132,125 +140,122 @@ export const TEMPLATES: Template[] = [
     font: "Montserrat",
     accentFont: "Caveat",
     treatment: "Soft multiline",
-    poster: MEDIA.multiline.aura,
+    poster: MEDIA.editorial.poster,
+    video: MEDIA.editorial.video,
   },
   {
-    id: "checkpoint",
-    name: "Checkpoint",
-    family: "Dynamic",
-    badge: "AI",
-    font: "Plus Jakarta Sans",
-    accentFont: "Plus Jakarta Sans",
-    treatment: "Karaoke colour flip",
-    poster: MEDIA.realEstate.reachCounter,
-  },
-  {
-    id: "highlighter",
-    name: "Highlighter",
-    family: "Social",
-    badge: "AI",
-    font: "Inter",
-    accentFont: "Inter",
-    treatment: "Box highlight",
-    poster: MEDIA.templates.afterglowMix,
-  },
-  {
-    id: "neon-drop",
-    name: "Neon Drop",
-    family: "Spatial",
-    badge: "AI",
-    font: "Anton",
-    accentFont: "Anton",
-    treatment: "Neon glow",
-    poster: MEDIA.contentAware.goldenHour,
+    id: "red-punch",
+    name: "Red Punch",
+    family: "Behind the Person",
+    badge: "POPULAR",
+    font: "Archivo Black",
+    accentFont: "Poppins",
+    treatment: "Behind subject • bold punch",
+    poster: MEDIA.red.poster,
+    video: MEDIA.red.video,
     pro: true,
   },
   {
-    id: "bollywood",
-    name: "Bollywood",
+    id: "spatial-glow",
+    name: "Spatial Glow",
+    family: "Spatial",
+    badge: "TRENDING",
+    font: "Inter Tight",
+    accentFont: "Inter",
+    treatment: "Depth extrusion",
+    poster: MEDIA.depth.poster,
+    video: MEDIA.depth.video,
+    pro: true,
+  },
+  {
+    id: "neon-reel",
+    name: "Neon Reel",
+    family: "Social",
+    badge: "POPULAR",
+    font: "Black Han Sans",
+    accentFont: "Poppins",
+    treatment: "High-contrast neon",
+    poster: MEDIA.neon.poster,
+    video: MEDIA.neon.video,
+  },
+  {
+    id: "desi-impact",
+    name: "Desi Impact",
     family: "Desi",
     badge: "DESI",
-    font: "Biryani",
-    accentFont: "Kalam",
-    treatment: "Hinglish word pop",
-    poster: MEDIA.realEstate.magentaEstate,
-  },
-  {
-    id: "script-pop",
-    name: "Script Pop",
-    family: "Playful",
-    badge: "CREATOR",
-    font: "Caveat",
+    font: "Anek Devanagari",
     accentFont: "Poppins",
-    treatment: "Handwritten accent",
-    poster: MEDIA.multiline.aura,
+    treatment: "Hindi / Hinglish punch",
+    poster: MEDIA.kumar.poster,
+    video: MEDIA.kumar.video,
   },
   {
-    id: "paper-cut",
-    name: "Paper Cut",
-    family: "Editorial",
-    badge: "AI",
-    font: "Playfair Display",
-    accentFont: "Josefin Sans",
-    treatment: "Editorial serif",
-    poster: MEDIA.contentAware.cutout,
-  },
-  {
-    id: "impact-stack",
-    name: "Impact Stack",
-    family: "Dynamic",
+    id: "ai-velocity",
+    name: "AI Velocity",
+    family: "AI Edits",
     badge: "AI",
     font: "Bebas Neue",
-    accentFont: "Bebas Neue",
-    treatment: "Squash & stretch",
-    poster: MEDIA.contentAware.ghostline,
+    accentFont: "Inter",
+    treatment: "Smart cut-to-beat",
+    poster: MEDIA.mix.poster,
+    video: MEDIA.mix.video,
   },
   {
-    id: "soft-focus",
-    name: "Soft Focus",
-    family: "Creators",
-    badge: "AI",
-    font: "Josefin Sans",
+    id: "slow-mornings",
+    name: "Slow Mornings",
+    family: "Editorial",
+    badge: "NEW",
+    font: "Libre Baskerville",
     accentFont: "Inter",
-    treatment: "Blur-in reveal",
-    poster: MEDIA.realEstate.dimensionStory,
+    treatment: "Cream italic fade",
+    poster: MEDIA.editorial.poster,
+    video: MEDIA.editorial.video,
+  },
+  {
+    id: "clean-sub",
+    name: "Clean Sub",
+    family: "Social",
+    badge: "AI",
+    font: "Inter Bold",
+    accentFont: "Inter",
+    treatment: "Minimal pill subtitle",
+    poster: MEDIA.blue.poster,
+    video: MEDIA.blue.video,
+  },
+  {
+    id: "hormozi-green",
+    name: "Hormozi Punch",
+    family: "Creators",
+    badge: "POPULAR",
+    font: "Montserrat Black",
+    accentFont: "Montserrat",
+    treatment: "Acid green caps",
+    poster: MEDIA.yellow.poster,
+    video: MEDIA.yellow.video,
   },
 ];
 
-export const POPULAR_TEMPLATES = TEMPLATES.filter((t) =>
-  ["kumar", "magenta-estate", "afterglow-mix", "discipline", "dimension-story", "golden-hour"].includes(
-    t.id,
-  ),
-);
+export const POPULAR_TEMPLATES = TEMPLATES.filter((t) => t.badge !== null);
+
+export function backendTemplateFor(templateId: string): string {
+  const map: Record<string, string> = {
+    kumar: "kumar",
+    "magenta-estate": "magenta_estate",
+    "afterglow-mix": "afterglow",
+    discipline: "discipline",
+    "dimension-story": "spatial",
+    "golden-hour": "golden_hour",
+    ghostline: "ghostline",
+    aura: "aura",
+    "red-punch": "red_punch",
+    "neon-reel": "neon",
+    "desi-impact": "desi",
+    "slow-mornings": "editorial",
+    "hormozi-green": "hormozi",
+  };
+  return map[templateId] ?? templateId;
+}
 
 export function getTemplate(id: string): Template | undefined {
   return TEMPLATES.find((t) => t.id === id);
-}
-
-/**
- * Maps a front-end template id to a render template bundled with the FastAPI
- * engine (see backend/behind_caption/templates/*.json). The engine ships four
- * base looks, so richer web templates fall back to the closest match.
- */
-export const BACKEND_TEMPLATE_BY_ID: Record<string, string> = {
-  kumar: "editorial",
-  "magenta-estate": "dynamic",
-  "afterglow-mix": "creator_yellow",
-  discipline: "editorial",
-  "dimension-story": "dynamic",
-  "golden-hour": "creator_yellow",
-  ghostline: "dynamic",
-  aura: "luxe",
-  checkpoint: "dynamic",
-  highlighter: "creator_yellow",
-  "neon-drop": "luxe",
-  bollywood: "dynamic",
-  "script-pop": "creator_yellow",
-  "paper-cut": "editorial",
-  "impact-stack": "dynamic",
-  "soft-focus": "luxe",
-};
-
-export function backendTemplateFor(id: string): string {
-  return BACKEND_TEMPLATE_BY_ID[id] ?? "dynamic";
 }
