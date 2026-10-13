@@ -1,0 +1,47 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1080 1080" width="1080" height="1080">
+  <defs>
+    <radialGradient id="bg" cx="40%" cy="30%" r="90%">
+      <stop offset="0%" stop-color="#2A2358"/>
+      <stop offset="46%" stop-color="#14122A"/>
+      <stop offset="100%" stop-color="#08080C"/>
+    </radialGradient>
+    <radialGradient id="moon" cx="36%" cy="32%" r="80%">
+      <stop offset="0%" stop-color="#FFFFFF"/>
+      <stop offset="55%" stop-color="#EEF2FF"/>
+      <stop offset="100%" stop-color="#AEB4F2"/>
+    </radialGradient>
+    <linearGradient id="comet" x1="0" y1="1" x2="1" y2="0">
+      <stop offset="0%" stop-color="#4F46E5" stop-opacity="0"/>
+      <stop offset="70%" stop-color="#818CF8" stop-opacity="0.85"/>
+      <stop offset="100%" stop-color="#C7CBFF" stop-opacity="1"/>
+    </linearGradient>
+    <filter id="glow" x="-60%" y="-60%" width="220%" height="220%">
+      <feGaussianBlur stdDeviation="24" result="b"/>
+      <feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+  </defs>
+
+  <rect width="1080" height="1080" fill="url(#bg)"/>
+
+  <!-- stars -->
+  <g fill="#FFFFFF">
+    <circle cx="250" cy="300" r="4" opacity="0.8"/>
+    <circle cx="820" cy="250" r="5" opacity="0.7"/>
+    <circle cx="860" cy="640" r="3.5" opacity="0.6"/>
+    <circle cx="300" cy="760" r="4.5" opacity="0.7"/>
+    <circle cx="180" cy="520" r="3" opacity="0.5"/>
+    <circle cx="720" cy="820" r="3.5" opacity="0.55"/>
+  </g>
+
+  <!-- halo -->
+  <circle cx="560" cy="510" r="290" fill="#4F46E5" opacity="0.30" filter="url(#glow)"/>
+
+  <!-- comet streak (the "shot") -->
+  <path d="M250 800 L560 510" stroke="url(#comet)" stroke-width="22" stroke-linecap="round" opacity="0.9"/>
+
+  <!-- moon -->
+  <circle cx="560" cy="510" r="220" fill="url(#moon)"/>
+  <circle cx="656" cy="422" r="33" fill="#4F46E5"/>
+  <circle cx="492" cy="572" r="17" fill="#C7CBF2" opacity="0.5"/>
+  <circle cx="580" cy="602" r="10" fill="#C7CBF2" opacity="0.38"/>
+</svg>

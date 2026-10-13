@@ -1,0 +1,510 @@
+{
+  "templates": [
+    {
+      "id": "slow-mornings",
+      "name": "Slow Mornings",
+      "description": "Cream italic words softly fade into view.",
+      "category": "editorial",
+      "raw_config": "ew({fontFamily:\"libre-baskerville\",fontStyle:\"italic\",textTransform:\"none\",fontSizePx:68,color:\"#FFF5D6\",emphasisColor:\"#FFF5D6\",captionEffect:\"none\",animIn:\"none\",maxWordsPerLine:4,positionYPct:.72,s"
+    },
+    {
+      "id": "still-time",
+      "name": "Still Time",
+      "description": "Bold cream capitals rise into view together.",
+      "category": "editorial",
+      "raw_config": "ew({fontFamily:\"anton\",fontStyle:\"normal\",textTransform:\"uppercase\",fontSizePx:88,color:\"#FFF5D6\",emphasisColor:\"#FFF5D6\",captionEffect:\"none\",animIn:\"none\",maxWordsPerLine:2,positionYPct:.72,shadowSt"
+    },
+    {
+      "id": "chapter-one",
+      "name": "Chapter 01",
+      "description": "Cream typewriter letters appear as you speak.",
+      "category": "editorial",
+      "raw_config": "ew({fontFamily:\"cousine-bold\",fontStyle:\"normal\",textTransform:\"none\",fontSizePx:60,color:\"#FFF5D6\",emphasisColor:\"#FFF5D6\",captionEffect:\"none\",animIn:\"none\",maxWordsPerLine:4,positionYPct:.72,shadow"
+    },
+    {
+      "id": "social-3d",
+      "name": "Parallax",
+      "description": "Blue italic, white outline, 3D edge.",
+      "category": "social",
+      "raw_config": "ew({color:\"#2B6FFF\",emphasisColor:\"#2B6FFF\",strokePx:5,strokeColor:\"#FFFFFF\",fontStyle:\"italic\",textTransform:\"uppercase\",shadow:{blurPx:0,color:\"#0B2E7A\",offsetY:7},shadowStyle:\"extrude\",maxWordsPerL"
+    },
+    {
+      "id": "social-caps",
+      "name": "Daylight",
+      "description": "Plain white all-caps with a soft shadow.",
+      "category": "social",
+      "raw_config": "ew({textTransform:\"uppercase\",emphasisColor:\"#FFFFFF\",maxWordsPerLine:3}"
+    },
+    {
+      "id": "social-outline",
+      "name": "Contour",
+      "description": "White caps with a thick black outline.",
+      "category": "social",
+      "raw_config": "ew({color:\"#FFFFFF\",emphasisColor:\"#FFFFFF\",strokePx:6,strokeColor:\"#141414\",textTransform:\"uppercase\",maxWordsPerLine:3,shadow:{blurPx:0,color:\"#000000\",offsetY:0}}"
+    },
+    {
+      "id": "social-greenbox",
+      "name": "Neon Reel",
+      "description": "Whole line on a lime bar, black ink.",
+      "category": "social",
+      "raw_config": "ew({captionEffect:\"box\",textTransform:\"uppercase\",color:\"#111111\",emphasisColor:\"#111111\",highlightBg:\"#9EE84F\",maxWordsPerLine:3,shadow:{blurPx:0,color:\"#000000\",offsetY:0}}"
+    },
+    {
+      "id": "social-glow",
+      "name": "Pink Neon",
+      "description": "White caps with a pink neon glow.",
+      "category": "social",
+      "raw_config": "ew({textTransform:\"uppercase\",emphasisColor:\"#FFFFFF\",maxWordsPerLine:3,shadow:{blurPx:20,color:\"#FF4FD8\",offsetY:0}}"
+    },
+    {
+      "id": "social-outline-heavy",
+      "name": "Blackout",
+      "description": "White caps, heavy black outline.",
+      "category": "social",
+      "raw_config": "ew({color:\"#FFFFFF\",emphasisColor:\"#FFFFFF\",strokePx:9,strokeColor:\"#141414\",textTransform:\"uppercase\",maxWordsPerLine:2,shadow:{blurPx:0,color:\"#000000\",offsetY:0}}"
+    },
+    {
+      "id": "retro-yellow",
+      "name": "Vignette",
+      "description": "Yellow italic, black outline.",
+      "category": "retro",
+      "raw_config": "ew({color:\"#FFE500\",emphasisColor:\"#FFE500\",fontStyle:\"italic\",strokePx:5,strokeColor:\"#141414\",fontSizePx:66,maxWordsPerLine:3,positionYPct:.74,shadow:{blurPx:0,color:\"#000000\",offsetY:0}}"
+    },
+    {
+      "id": "retro-blackbox",
+      "name": "Letterbox",
+      "description": "White text on a solid black box.",
+      "category": "retro",
+      "raw_config": "ew({captionEffect:\"box\",color:\"#FFFFFF\",highlightBg:\"#0A0A0A\",fontSizePx:60,maxWordsPerLine:5,positionYPct:.76,shadow:{blurPx:0,color:\"#000000\",offsetY:0}}"
+    },
+    {
+      "id": "retro-italic-box",
+      "name": "Splice",
+      "description": "Italic white text on a black box.",
+      "category": "retro",
+      "raw_config": "ew({captionEffect:\"box\",color:\"#FFFFFF\",fontStyle:\"italic\",highlightBg:\"#0A0A0A\",fontSizePx:60,maxWordsPerLine:4,positionYPct:.76,shadow:{blurPx:0,color:\"#000000\",offsetY:0}}"
+    },
+    {
+      "id": "retro-yellow-word",
+      "name": "Filmstrip",
+      "description": "Black box, yellow active word.",
+      "category": "retro",
+      "raw_config": "ew({captionEffect:\"box\",color:\"#FFFFFF\",emphasisColor:\"#FFE500\",highlightBg:\"#0A0A0A\",fontSizePx:60,maxWordsPerLine:5,positionYPct:.76,shadow:{blurPx:0,color:\"#000000\",offsetY:0}}"
+    },
+    {
+      "id": "ca-cutout",
+      "name": "Cutout",
+      "description": "Large centered phrases build across two rows with an inverted hero word.",
+      "category": "contentaware",
+      "raw_config": "ew({fontFamily:\"archivo-black\",captionEffect:\"none\",color:\"#FFFFFF\",emphasisColor:\"#FFFFFF\",emphasisStyle:{color:\"#FFFFFF\",effect:\"inception\",scale:1.75},letterSpacingEm:-.065,fontSizePx:112,widthPct:"
+    },
+    {
+      "id": "fur-text",
+      "name": "Pink Fur",
+      "description": "Soft pink long-pile letters lifted above the footage.",
+      "category": "playful",
+      "raw_config": "ew({fontFamily:\"montserrat-bold\",captionEffect:\"none\",animIn:\"pop\",textTransform:\"uppercase\",color:\"#FFFFFF\",emphasisColor:\"#FFFFFF\",emphasisColorMinTier:2,roleStyles:{plain:{fontFamily:\"montserrat-bo"
+    },
+    {
+      "id": "plush-text",
+      "name": "Pink Plush",
+      "description": "Vivid pink short-nap velvet with a rounded padded edge.",
+      "category": "playful",
+      "raw_config": "ew({fontFamily:\"montserrat-bold\",captionEffect:\"none\",animIn:\"pop\",textTransform:\"uppercase\",color:\"#FFFFFF\",emphasisColor:\"#FFFFFF\",emphasisColorMinTier:2,roleStyles:{plain:{fontFamily:\"montserrat-bo"
+    },
+    {
+      "id": "sheep-text",
+      "name": "Sheep Boucl\u00e9",
+      "description": "Cream boucl\u00e9 letters with the video's irregular blue patches.",
+      "category": "playful",
+      "raw_config": "ew({fontFamily:\"montserrat-bold\",captionEffect:\"none\",animIn:\"pop\",textTransform:\"uppercase\",color:\"#FFFFFF\",emphasisColor:\"#FFFFFF\",emphasisColorMinTier:2,roleStyles:{plain:{fontFamily:\"montserrat-bo"
+    },
+    {
+      "id": "raised-fur",
+      "name": "Raised Fur 3D",
+      "description": "Pale blue fur with the video's stronger elevated depth.",
+      "category": "playful",
+      "raw_config": "ew({fontFamily:\"montserrat-bold\",captionEffect:\"none\",animIn:\"pop\",textTransform:\"uppercase\",color:\"#FFFFFF\",emphasisColor:\"#FFFFFF\",emphasisColorMinTier:2,roleStyles:{plain:{fontFamily:\"montserrat-bo"
+    },
+    {
+      "id": "sculpted-fur-text",
+      "name": "Sculpted Fur",
+      "description": "Soft pink long-pile letters lifted above the footage.",
+      "category": "playful",
+      "raw_config": "ew({fontFamily:\"sour-gummy\",captionEffect:\"sculpted-fur\",animIn:\"pop\",textTransform:\"uppercase\",color:\"#F58DAD\",emphasisColor:\"#F58DAD\",emphasisColorMinTier:1,roleStyles:{plain:{fontFamily:\"sour-gummy"
+    },
+    {
+      "id": "sculpted-plush-text",
+      "name": "Sculpted Plush",
+      "description": "Vivid pink short-nap velvet with a rounded padded edge.",
+      "category": "playful",
+      "raw_config": "ew({fontFamily:\"sour-gummy\",captionEffect:\"sculpted-plush\",animIn:\"pop\",textTransform:\"uppercase\",color:\"#E96D9D\",emphasisColor:\"#E96D9D\",emphasisColorMinTier:1,roleStyles:{plain:{fontFamily:\"sour-gum"
+    },
+    {
+      "id": "sculpted-sheep-text",
+      "name": "Sculpted Boucl\u00e9",
+      "description": "Cream boucl\u00e9 letters with the video's irregular blue patches.",
+      "category": "playful",
+      "raw_config": "ew({fontFamily:\"sour-gummy\",captionEffect:\"sculpted-sheep\",animIn:\"pop\",textTransform:\"uppercase\",color:\"#E9D8B4\",emphasisColor:\"#E9D8B4\",emphasisColorMinTier:1,roleStyles:{plain:{fontFamily:\"sour-gum"
+    },
+    {
+      "id": "sculpted-raised-fur",
+      "name": "Sculpted Blue Fur",
+      "description": "Pale blue fur with the video's stronger elevated depth.",
+      "category": "playful",
+      "raw_config": "ew({fontFamily:\"sour-gummy\",captionEffect:\"sculpted-raised-3d\",animIn:\"pop\",textTransform:\"uppercase\",color:\"#A9D4EE\",emphasisColor:\"#A9D4EE\",emphasisColorMinTier:1,roleStyles:{plain:{fontFamily:\"sour"
+    },
+    {
+      "id": "satin-pillow-text",
+      "name": "Satin Pillow",
+      "description": "Rose satin cushion letters with soft highlights and stitched edges.",
+      "category": "playful",
+      "raw_config": "ew({fontFamily:\"sour-gummy\",captionEffect:\"satin-pillow\",animIn:\"pop\",textTransform:\"lowercase\",color:\"#DF91B4\",emphasisColor:\"#DF91B4\",roleStyles:{plain:{fontFamily:\"sour-gummy\",weight:800,color:\"#DF"
+    },
+    {
+      "id": "whipped-cream-text",
+      "name": "Whipped Cream",
+      "description": "Piped ivory lettering with curved ridges and pastel sprinkles.",
+      "category": "playful",
+      "raw_config": "ew({fontFamily:\"sour-gummy\",captionEffect:\"whipped-cream\",animIn:\"pop\",textTransform:\"uppercase\",color:\"#FFF2DA\",emphasisColor:\"#FFF2DA\",roleStyles:{plain:{fontFamily:\"sour-gummy\",weight:800,color:\"#F"
+    },
+    {
+      "id": "soft-fluffy-text",
+      "name": "Soft Fluffy",
+      "description": "Rounded lavender fleece letters with a softly raised face.",
+      "category": "playful",
+      "raw_config": "ew({fontFamily:\"sour-gummy\",captionEffect:\"soft-fluffy\",animIn:\"pop\",textTransform:\"uppercase\",color:\"#E3DEF4\",emphasisColor:\"#E3DEF4\",roleStyles:{plain:{fontFamily:\"sour-gummy\",weight:800,color:\"#E3D"
+    },
+    {
+      "id": "sweep",
+      "name": "Searchlight",
+      "description": "A light band scans across the words.",
+      "category": "dynamic",
+      "raw_config": "ew({fontFamily:\"montserrat\",captionEffect:\"sweep\",animIn:\"fade\",fontSizePx:74,emphasisColor:\"#D9FF2F\",maxWordsPerLine:4,positionYPct:.68,shadow:{blurPx:16,color:\"#000000\",offsetY:4}}"
+    },
+    {
+      "id": "wave",
+      "name": "Handheld",
+      "description": "Handwritten emphasis for creator clips.",
+      "category": "dynamic",
+      "raw_config": "ew({fontFamily:\"permanent-marker\",captionEffect:\"wave\",animIn:\"fade\",fontSizePx:84,emphasisColor:\"#D9FF2F\",maxWordsPerLine:4,positionYPct:.64,shadow:{blurPx:12,color:\"#000000\",offsetY:4}}"
+    },
+    {
+      "id": "dyn-stretch",
+      "name": "Inception",
+      "description": "Impact words invert the footage and fill the frame.",
+      "category": "dynamic",
+      "raw_config": "ew({requiredWordsPerCaption:1,fontFamily:\"anton\",captionEffect:\"none\",animIn:\"none\",textTransform:\"uppercase\",fontSizePx:148,widthPct:.92,color:\"#D2D2D2\",emphasisColor:\"#FFFFFF\",emphasisStyle:{color:\""
+    },
+    {
+      "id": "dyn-linen",
+      "name": "Linen",
+      "description": "Letters type on behind a translucent cursor.",
+      "category": "dynamic",
+      "raw_config": "ew({fontFamily:\"bricolage-grotesque\",captionEffect:\"none\",motionProfile:\"soft-type\",animIn:\"none\",fontSizePx:100,widthPct:.65,color:\"#FFFFFF\",emphasisColor:\"#FFFFFF\",letterSpacingEm:-.04,lineHeightEm:"
+    },
+    {
+      "id": "wiggle-marker",
+      "name": "Wiggle Marker",
+      "description": "Handwritten words rock back and forth on the beat.",
+      "category": "dynamic",
+      "raw_config": "ew({fontFamily:\"permanent-marker\",captionEffect:\"wiggle\",animIn:\"fade\",fontSizePx:82,color:\"#FFFFFF\",emphasisColor:\"#3DDC97\",maxWordsPerLine:4,positionYPct:.64,shadow:{blurPx:12,color:\"#000000\",offset"
+    },
+    {
+      "id": "archive",
+      "name": "Dossier",
+      "description": "Documentary caps that fill as they are spoken, stacked hooks, and push cuts.",
+      "category": "aiedits",
+      "raw_config": "ew({fontFamily:\"bebas-neue\",textTransform:\"uppercase\",captionEffect:\"outline-fill\",animIn:\"none\",fontSizePx:112,color:\"#FFFFFF\",emphasisColor:\"#FFFFFF\",lineHeightEm:.89,letterSpacingEm:.01,wordSpacing"
+    },
+    {
+      "id": "riso",
+      "name": "Riso",
+      "description": "Two-ink duotone prints, misregistered titles, halftone and stickers.",
+      "category": "aiedits",
+      "raw_config": "ew({fontFamily:\"anton\",textTransform:\"uppercase\",captionEffect:\"none\",animIn:\"fade\",fontSizePx:92,color:\"#FFFFFF\",emphasisColor:\"#FFFFFF\",lineHeightEm:.95,letterSpacingEm:.01,wordSpacingEm:.2,maxWords"
+    },
+    {
+      "id": "vinyl",
+      "name": "B-Side",
+      "description": "Cream label captions, poster bands, and long-shadow cards on a mustard sleeve.",
+      "category": "aiedits",
+      "raw_config": "ew({fontFamily:\"google:Plus%20Jakarta%20Sans\",roleStyles:{plain:{fontFamily:\"google:Plus%20Jakarta%20Sans\",weight:700},pop:{fontFamily:\"google:Plus%20Jakarta%20Sans\",weight:700},hero:{fontFamily:\"goog"
+    },
+    {
+      "id": "editorial-grain",
+      "name": "Editorial Grain",
+      "description": "Serif magazine pages above your head, a red pen on contrasts, lists and numbers, and fine grain.",
+      "category": "aiedits",
+      "raw_config": "ew({fontFamily:\"instrument-serif\",creatorTreatment:\"editorial-grain\",hideEmoji:!0,captionEffect:\"none\",animIn:\"none\",textTransform:\"none\",fontSizePx:96,lineHeightEm:1,letterSpacingEm:0,wordSpacingEm:."
+    },
+    {
+      "id": "pop-bold",
+      "name": "Pop Bold",
+      "description": "Chunky lime captions, neon blocks for every number, list and question, and a pop-up card on close-ups.",
+      "category": "aiedits",
+      "raw_config": "ew({creatorTreatment:\"pop-bold\",fontFamily:\"bricolage-grotesque\",fontSizePx:56,color:\"#111111\",emphasisColor:\"#111111\",roleStyles:{pop:{color:\"#8A3CFF\"},hero:{color:\"#FF4FD8\"}},textTransform:\"none\",le"
+    },
+    {
+      "id": "bobblehead",
+      "name": "Bobblehead",
+      "description": "Your head as a bobbling sticker with a giant mic, sticker labels for every number and list, on denim.",
+      "category": "aiedits",
+      "raw_config": "ew({creatorTreatment:\"bobblehead\",fontFamily:\"inter-black\",fontSizePx:94,color:\"#FFFFFF\",emphasisColor:\"#FFFFFF\",textTransform:\"none\",letterSpacingEm:-.05,lineHeightEm:1.12,wordSpacingEm:.22,maxWordsP"
+    },
+    {
+      "id": "slab",
+      "name": "Slab",
+      "description": "Brick tape captions, giant words that slip behind you, strikes, stamps and a counter.",
+      "category": "aiedits",
+      "raw_config": "ew({fontFamily:\"instrument-sans\",roleStyles:{plain:{fontFamily:\"instrument-sans\",weight:700},pop:{fontFamily:\"instrument-serif\",weight:400,italic:!0,scale:1.14},hero:{fontFamily:\"instrument-serif\",wei"
+    },
+    {
+      "id": "moments-grain",
+      "name": "Moments Grain",
+      "description": "Paper-slip cards in a serif with red marks, landing on the word.",
+      "category": "aiedits",
+      "raw_config": "ew({fontFamily:\"instrument-serif\",captionEffect:\"box\",animIn:\"fade\",boxShape:\"strip\",boxPadEm:.4,emphasisOn:\"active\",fontSizePx:48,color:\"#1A1A1A\",emphasisColor:\"#C2412D\",highlightBg:\"#EFE8DC\",highlig"
+    },
+    {
+      "id": "moments-pop",
+      "name": "Moments Pop",
+      "description": "Bold lime and pink cards with ink outlines and stickers, landing on the word.",
+      "category": "aiedits",
+      "raw_config": "ew({fontFamily:\"bricolage-grotesque\",roleStyles:{plain:{fontFamily:\"bricolage-grotesque\",weight:800},pop:{fontFamily:\"bricolage-grotesque\",weight:800},hero:{fontFamily:\"bricolage-grotesque\",weight:800"
+    },
+    {
+      "id": "podcast-cutout",
+      "name": "Podcast Cutout",
+      "description": "You cut out on black with a white ring, giant words behind your head and a red banner.",
+      "category": "aiedits",
+      "raw_config": "ew({creatorTreatment:\"podcast-cutout\",fontFamily:\"oswald-bold\",fontSizePx:46,color:\"#FFFFFF\",emphasisColor:\"#FFFFFF\",textTransform:\"uppercase\",letterSpacingEm:.02,lineHeightEm:1.1,wordSpacingEm:.25,ma"
+    },
+    {
+      "id": "explainer",
+      "name": "Explainer",
+      "description": "A teacher's board: you drop into the bottom half as the board opens above your head.",
+      "category": "aiedits",
+      "raw_config": "ew({creatorTreatment:\"explainer\",fontFamily:\"inter-tight-semibold\",roleStyles:{plain:{fontFamily:\"inter-tight-semibold\",weight:500},hero:{fontFamily:\"instrument-serif\",weight:400,italic:!0,scale:1.323"
+    },
+    {
+      "id": "grid-notes",
+      "name": "Grid Notes",
+      "description": "Serif notes on maroon grid paper, marks in your captions, and you as a sticker on the board.",
+      "category": "aiedits",
+      "raw_config": "ew({creatorTreatment:\"grid-notes\",fontFamily:\"unna\",roleStyles:{plain:{fontFamily:\"unna\",weight:700},pop:{fontFamily:\"unna\",weight:700},hero:{fontFamily:\"unna\",weight:700}},fontSizePx:47,textTransform"
+    },
+    {
+      "id": "keepsake",
+      "name": "Keepsake",
+      "description": "Soft print moments in serif and script, a letter in an envelope with a wax seal, an ornate frame.",
+      "category": "aiedits",
+      "raw_config": "ew({creatorTreatment:\"keepsake\",fontFamily:\"inter-tight-extrabold\",roleStyles:{plain:{fontFamily:\"inter-tight-extrabold\",weight:700},pop:{fontFamily:\"instrument-serif\",weight:400,italic:!0},hero:{font"
+    },
+    {
+      "id": "aurora",
+      "name": "Aurora",
+      "description": "White caps with yellow and green halo emphasis.",
+      "category": "creators",
+      "raw_config": "ew({fontFamily:\"inter-bold\",gradientTreatment:\"aurora\",textTransform:\"uppercase\",captionEffect:\"none\",animIn:\"none\",fontSizePx:72,maxWordsPerLine:4,positionYPct:.7,lineHeightEm:1,color:\"#FFFFFF\",empha"
+    },
+    {
+      "id": "heatwave",
+      "name": "Heatwave",
+      "description": "Tracked white caps over a large red serif gradient.",
+      "category": "creators",
+      "raw_config": "ew({fontFamily:\"inter-medium\",gradientTreatment:\"heatwave\",fontPairing:{primary:\"inter-medium\",secondary:\"bitter\",accent:\"bitter\",accentMinTier:1},secondLine:{label:\"Red line\",hint:\"The large second r"
+    },
+    {
+      "id": "ultraviolet",
+      "name": "Ultraviolet",
+      "description": "Yellow-gradient caps paired with white brush script.",
+      "category": "creators",
+      "raw_config": "ew({fontFamily:\"passion-one\",gradientTreatment:\"ultraviolet\",fontPairing:{primary:\"passion-one\",secondary:\"kaushan-script\",accent:\"kaushan-script\",accentMinTier:1},secondLine:{label:\"Script line\",hint"
+    },
+    {
+      "id": "ml-aura",
+      "name": "Blue Muse",
+      "description": "Playfair italic, compact support type, and one ice-blue uppercase key.",
+      "category": "multiline",
+      "raw_config": "ew({fontFamily:\"open-sans\",fontStyle:\"normal\",captionEffect:\"none\",animIn:\"fade\",fontPairing:{primary:\"playfair-display\",accent:\"moonshot-aura\",accentMinTier:1,accentTransform:\"uppercase\"},color:\"#FFF"
+    },
+    {
+      "id": "ml-swiss",
+      "name": "Diagonal",
+      "description": "Inter Black roles in a diagonal white-and-yellow editorial lockup.",
+      "category": "multiline",
+      "raw_config": "ew({fontFamily:\"inter-black\",captionEffect:\"none\",animIn:\"fade\",fontPairing:{primary:\"inter-black\",accent:\"inter-black\",accentMinTier:1,accentTransform:\"uppercase\"},color:\"#FFFFFF\",emphasisColor:\"#F5D"
+    },
+    {
+      "id": "ruby-rise",
+      "name": "Ruby Rise",
+      "description": "Ivory italic words rise above large red emphasis.",
+      "category": "multiline",
+      "raw_config": "ew({creatorTreatment:\"ruby-rise\",fontFamily:\"instrument-serif\",fontStyle:\"italic\",fontPairing:{primary:\"instrument-serif\",accent:\"anton\",accentMinTier:1,accentTransform:\"uppercase\"},color:\"#FFFFF0\",em"
+    },
+    {
+      "id": "twin-weight",
+      "name": "Twin Weight",
+      "description": "Two white lines stay in place while the spoken line turns bold.",
+      "category": "multiline",
+      "raw_config": "ew({creatorTreatment:\"twin-weight\",fontFamily:\"montserrat\",color:\"#FFFFFF\",emphasisColor:\"#FFFFFF\",fontSizePx:57.6,widthPct:.9,positionYPct:.7,lineHeightEm:1,letterSpacingEm:0,wordSpacingEm:.25,maxWor"
+    },
+    {
+      "id": "handwritten-note",
+      "name": "Handwritten Note",
+      "description": "White handwriting reveals with a gentle wobble and coral drawn emphasis.",
+      "category": "multiline",
+      "raw_config": "ew({creatorTreatment:\"handwritten-note\",fontFamily:\"gloria-hallelujah\",fontSizePx:57.6,color:\"#FFFFFF\",emphasisColor:\"#FFFFFF\",highlightBg:\"#FF5A36\",widthPct:.9,positionYPct:.7,lineHeightEm:1,letterSp"
+    },
+    {
+      "id": "neon-circuit",
+      "name": "Neon Circuit",
+      "description": "Technical white caps cut to a luminous yellow keyword.",
+      "category": "multiline",
+      "raw_config": "ew({creatorTreatment:\"neon-circuit\",fontFamily:\"google:Chakra Petch\",fontSizePx:76.8,color:\"#FFFFFF\",emphasisColor:\"#FEFE00\",widthPct:.9,lineHeightEm:1,letterSpacingEm:0,wordSpacingEm:.22,maxWordsPerL"
+    },
+    {
+      "id": "doodle-script",
+      "name": "Doodle Script",
+      "description": "Bright handwritten accents, drawn flourishes and varied word entrances.",
+      "category": "multiline",
+      "raw_config": "ew({creatorTreatment:\"doodle-script\",fontFamily:\"google:Onest\",fontSizePx:57.6,color:\"#FFFFFF\",emphasisColor:\"#5FE0AE\",widthPct:.9,positionYPct:.7,lineHeightEm:1,wordSpacingEm:.22,maxWordsPerLine:8,ma"
+    },
+    {
+      "id": "orange-cut",
+      "name": "Orange Cut",
+      "description": "White bold captions on a compact orange plate.",
+      "category": "multiline",
+      "raw_config": "ew({creatorTreatment:\"orange-cut\",fontFamily:\"inter-bold\",fontSizePx:76.8,color:\"#FFFFFF\",emphasisColor:\"#FFFFFF\",widthPct:.9,positionYPct:.7,lineHeightEm:1,letterSpacingEm:0,wordSpacingEm:.22,maxWord"
+    },
+    {
+      "id": "gold-punch",
+      "name": "Gold Punch",
+      "description": "Yellow geometric caps settle above a crisp dark extruded edge.",
+      "category": "multiline",
+      "raw_config": "ew({creatorTreatment:\"gold-punch\",fontFamily:\"google:Jost\",fontSizePx:57.6,color:\"#FFD700\",emphasisColor:\"#FFD700\",widthPct:.9,positionYPct:.7,lineHeightEm:1,letterSpacingEm:0,wordSpacingEm:.22,maxWor"
+    },
+    {
+      "id": "violet-voice",
+      "name": "Violet Voice",
+      "description": "Bare violet caps with a soft layered black shadow.",
+      "category": "multiline",
+      "raw_config": "ew({creatorTreatment:\"violet-voice\",fontFamily:\"montserrat-bold\",fontSizePx:57.6,color:\"#A34EFF\",emphasisColor:\"#A34EFF\",widthPct:.9,positionYPct:.7,lineHeightEm:1,letterSpacingEm:0,wordSpacingEm:.22,"
+    },
+    {
+      "id": "cream-focus",
+      "name": "Cream Focus",
+      "description": "Soft cream lettering builds into oversized emphasis across two lines.",
+      "category": "multiline",
+      "raw_config": "ew({creatorTreatment:\"cream-focus\",fontFamily:\"inter-bold\",fontSizePx:57.6,color:\"#FBEEC9\",emphasisColor:\"#FBEEC9\",widthPct:.9,positionYPct:.7,lineHeightEm:1,wordSpacingEm:.22,maxWordsPerLine:8,maxLin"
+    },
+    {
+      "id": "lime-stack",
+      "name": "Lime Stack",
+      "description": "Lowercase words rise into a dense block with lime emphasis.",
+      "category": "multiline",
+      "raw_config": "ew({creatorTreatment:\"lime-stack\",maxLinesPerCaption:3,fontFamily:\"montserrat\",color:\"#FFFFFF\",emphasisColor:\"#F9FD45\",fontSizePx:120.8,widthPct:.9,positionYPct:.78,lineHeightEm:1,letterSpacingEm:-.05"
+    },
+    {
+      "id": "citrus-chrome",
+      "name": "Citrus Chrome",
+      "description": "Large lime lettering catches a pale stripe of light.",
+      "category": "multiline",
+      "raw_config": "ew({creatorTreatment:\"citrus-chrome\",fontFamily:\"inter-regular\",color:\"#FFFFFF\",emphasisColor:\"#a0d83e\",fontSizePx:76.8,widthPct:.9,positionYPct:.5,lineHeightEm:1,letterSpacingEm:0,wordSpacingEm:.22,m"
+    },
+    {
+      "id": "ink-card",
+      "name": "Ink Card",
+      "description": "Words darken as you speak inside a white rounded card.",
+      "category": "multiline",
+      "raw_config": "ew({creatorTreatment:\"ink-card\",fontFamily:\"poppins-medium\",color:\"#000000\",emphasisColor:\"#000000\",fontSizePx:86.4,widthPct:.9,positionYPct:.7,lineHeightEm:1,letterSpacingEm:0,wordSpacingEm:.22,maxWo"
+    },
+    {
+      "id": "mint-bounce",
+      "name": "Mint Bounce",
+      "description": "A mint chip bounces behind each spoken word.",
+      "category": "multiline",
+      "raw_config": "ew({creatorTreatment:\"mint-bounce\",fontFamily:\"roboto\",color:\"#FFFFFF\",emphasisColor:\"#FFFFFF\",fontSizePx:57.6,widthPct:.9,positionYPct:.7,lineHeightEm:1,letterSpacingEm:0,wordSpacingEm:.22,maxWordsPe"
+    },
+    {
+      "id": "story-notes",
+      "name": "Story Notes",
+      "description": "Headlines, handwritten replies and drawn circles tell the story.",
+      "category": "multiline",
+      "raw_config": "ew({creatorTreatment:\"story-notes\",maxLinesPerCaption:5,fontFamily:\"poppins-medium\",color:\"#F2FF00\",emphasisColor:\"#FF3B30\",fontSizePx:31.2,widthPct:.9,positionYPct:.7,lineHeightEm:1,letterSpacingEm:0"
+    },
+    {
+      "id": "amber-cast",
+      "name": "Amber Cast",
+      "description": "Orange emphasis and silver context fade into dark metallic edges.",
+      "category": "multiline",
+      "raw_config": "ew({creatorTreatment:\"amber-cast\",fontFamily:\"inter-regular\",color:\"#FFFFFF\",emphasisColor:\"#fe9c03\",fontSizePx:115.2,widthPct:.9,positionYPct:.5,lineHeightEm:1,letterSpacingEm:0,wordSpacingEm:.22,max"
+    },
+    {
+      "id": "black-ink",
+      "name": "Black Ink",
+      "description": "Solid black Anton lettering leaves a soft dark edge.",
+      "category": "multiline",
+      "raw_config": "ew({creatorTreatment:\"black-ink\",fontFamily:\"anton\",color:\"#000000\",emphasisColor:\"#000000\",fontSizePx:57.6,widthPct:.9,positionYPct:.7,lineHeightEm:1,letterSpacingEm:0,wordSpacingEm:.22,maxWordsPerLi"
+    },
+    {
+      "id": "gold-settle",
+      "name": "Gold Settle",
+      "description": "Gold block letters grow gently into place.",
+      "category": "multiline",
+      "raw_config": "ew({creatorTreatment:\"gold-settle\",fontFamily:\"archivo-black\",color:\"#FFF368\",emphasisColor:\"#FFF368\",fontSizePx:57.6,widthPct:.9,positionYPct:.7,lineHeightEm:1,letterSpacingEm:0,wordSpacingEm:.22,max"
+    },
+    {
+      "id": "stacked-notes",
+      "name": "Stacked Notes",
+      "description": "Separate black caption cards appear one line at a time.",
+      "category": "multiline",
+      "raw_config": "ew({creatorTreatment:\"stacked-notes\",maxLinesPerCaption:4,fontFamily:\"inter-regular\",color:\"#FFFFFF\",emphasisColor:\"#FFFFFF\",fontSizePx:57.6,widthPct:.9,positionYPct:.25,lineHeightEm:1,letterSpacingEm"
+    },
+    {
+      "id": "floating-aside",
+      "name": "Floating Aside",
+      "description": "White and gold lines float beside the speaker.",
+      "category": "multiline",
+      "raw_config": "ew({creatorTreatment:\"floating-aside\",maxLinesPerCaption:4,fontFamily:\"poppins-bold\",color:\"#FFFFFF\",emphasisColor:\"#eccc5e\",fontSizePx:57.6,widthPct:.35,positionYPct:.6,lineHeightEm:1,letterSpacingEm"
+    },
+    {
+      "id": "lime-impact",
+      "name": "Lime Impact",
+      "description": "Bold white lines make room for larger lime words.",
+      "category": "multiline",
+      "raw_config": "ew({creatorTreatment:\"lime-impact\",maxLinesPerCaption:2,fontFamily:\"archivo-black\",color:\"#FFFFFF\",emphasisColor:\"#7FFF33\",fontSizePx:57.6,widthPct:.9,positionYPct:.7,lineHeightEm:1,letterSpacingEm:0,"
+    },
+    {
+      "id": "ice-flicker",
+      "name": "Ice Flicker",
+      "description": "Pale wide lettering turns and flickers into view.",
+      "category": "multiline",
+      "raw_config": "ew({creatorTreatment:\"ice-flicker\",fontFamily:\"roboto\",color:\"#FFFFFF\",emphasisColor:\"#F0F6FC\",fontSizePx:76.8,widthPct:.9,positionYPct:.5,lineHeightEm:1,letterSpacingEm:0,wordSpacingEm:.22,maxWordsPe"
+    },
+    {
+      "id": "pink-marker",
+      "name": "Pink Marker",
+      "description": "A rough pink strip grows beneath the words as you speak.",
+      "category": "multiline",
+      "raw_config": "ew({creatorTreatment:\"pink-marker\",maxLinesPerCaption:2,fontFamily:\"inter-regular\",color:\"#FFFFFF\",emphasisColor:\"#FFFFFF\",fontSizePx:57.6,widthPct:.9,positionYPct:.7,lineHeightEm:1,letterSpacingEm:0,"
+    },
+    {
+      "id": "ml-gold-slide",
+      "name": "Gold Slide",
+      "description": "Small white setup text over a bold gold-gradient line that rises in word by word.",
+      "category": "multiline",
+      "raw_config": "ew({fontFamily:\"poppins-medium\",gradientTreatment:\"gold-slide\",fontPairing:{primary:\"poppins-medium\",secondary:\"roboto-slab\",accent:\"roboto-slab\",accentMinTier:1,accentTransform:\"uppercase\"},secondLin"
+    },
+    {
+      "id": "eight-bit",
+      "name": "8-Bit",
+      "description": "Arcade pixel type for gaming clips.",
+      "category": "fx",
+      "raw_config": "ew({fontFamily:\"press-start\",textTransform:\"uppercase\",captionEffect:\"karaoke\",animIn:\"none\",fontSizePx:34,maxWordsPerLine:3,positionYPct:.76,color:\"#FFFFFF\",emphasisColor:\"#9FFF6A\",hideEmoji:!0,shado"
+    }
+  ],
+  "mogrt": [],
+  "animations": []
+}

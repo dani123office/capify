@@ -115,5 +115,7 @@ def run(video: str, srt: str, template: str, out: str, segmenter: str = "mediapi
 
     cap.release()
     ff.stdin.close()
-    ff.wait()
+    retcode = ff.wait()
+    if retcode != 0:
+        raise RuntimeError(f"FFmpeg exited with code {retcode}")
     print(f"[{template}] done -> {out}")
