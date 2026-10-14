@@ -19,8 +19,19 @@ import { engine, sleep } from "../../_lib/api";
 
 type FileMode = "video" | "srt";
 
-export function EditorCard() {
-  const [template, setTemplate] = useState<Template>(POPULAR_TEMPLATES[0]);
+export function EditorCard({
+  selectedTemplate,
+  onSelectTemplate,
+}: {
+  selectedTemplate?: Template;
+  onSelectTemplate?: (t: Template) => void;
+} = {}) {
+  const [internalTemplate, setInternalTemplate] = useState<Template>(POPULAR_TEMPLATES[0]);
+  const template = selectedTemplate || internalTemplate;
+  const setTemplate = (t: Template) => {
+    if (onSelectTemplate) onSelectTemplate(t);
+    else setInternalTemplate(t);
+  };
   const [pickerOpen, setPickerOpen] = useState(false);
   const [fileMode, setFileMode] = useState<FileMode>("video");
   const [file, setFile] = useState<File | null>(null);
@@ -179,19 +190,43 @@ export function EditorCard() {
         <div className="mt-4 flex flex-col items-center justify-between gap-3 px-1 sm:flex-row">
           {/* Left: Style Thumbnail & Dropdown */}
           <div className="flex w-full items-center gap-3 sm:w-auto">
-            <div
+            <button
+              type="button"
+              tabIndex={-1}
               onClick={() => setPickerOpen((v) => !v)}
-              className="h-11 w-11 shrink-0 cursor-pointer overflow-hidden rounded-xl border border-slate-200 bg-cover bg-center shadow-xs transition hover:opacity-90"
-              style={{ backgroundImage: `url(${MEDIA.hero.karaokeThumb})` }}
-            />
+              className="group relative h-11 w-11 shrink-0 cursor-pointer overflow-hidden rounded-xl border border-slate-200 shadow-xs transition hover:opacity-90"
+            >
+              <img
+                src={template?.poster || MEDIA.hero.karaokeThumb}
+                alt={template?.name || "Style"}
+                className="h-full w-full object-cover object-top transition duration-300 group-hover:scale-105"
+              />
+            </button>
             <div className="relative">
-              <button
-                type="button"
-                onClick={() => setPickerOpen((v) => !v)}
-                className="flex items-center gap-1 text-sm font-semibold text-indigo-600 hover:text-indigo-700"
-              >
-                Pick a style <ArrowDown className="h-3.5 w-3.5" />
-              </button>
+              <div className="flex items-baseline gap-1.5">
+                {template ? (
+                  <>
+                    <span className="text-[15px] font-semibold text-slate-900">
+                      {template.name}
+                    </span>
+                    <button
+                      type="button"
+                      onClick={() => setPickerOpen((v) => !v)}
+                      className="text-xs font-semibold text-indigo-600 hover:underline"
+                    >
+                      Change
+                    </button>
+                  </>
+                ) : (
+                  <button
+                    type="button"
+                    onClick={() => setPickerOpen((v) => !v)}
+                    className="flex items-center gap-1 text-[15px] font-semibold text-indigo-600 hover:text-indigo-700"
+                  >
+                    Pick a style <ArrowDown className="h-3.5 w-3.5" />
+                  </button>
+                )}
+              </div>
               <div className="mt-0.5 flex items-center gap-1 text-xs text-slate-500 font-medium">
                 Captions in{" "}
                 <span className="cursor-pointer font-semibold text-slate-700 underline decoration-dotted">

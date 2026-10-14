@@ -38,6 +38,22 @@ export const MEDIA = {
     poster: `${MEDIA_BASE}/contentaware/ca-cutout-d1759b224c5e-poster.jpg`,
     video: `${MEDIA_BASE}/contentaware/ca-cutout-4fca888b6394.mp4`,
   },
+  headliner: {
+    poster: `${MEDIA_BASE}/multiline/ml-blockbuster-377e68e4da16-poster.jpg`,
+    video: `${MEDIA_BASE}/multiline/ml-blockbuster-c28d727ca52b.mp4`,
+  },
+  blueMuse: {
+    poster: `${MEDIA_BASE}/multiline/ml-aura-061aa4b4fa90-poster.jpg`,
+    video: `${MEDIA_BASE}/multiline/ml-aura-22a6a4a0dd8f.mp4`,
+  },
+  tabahi: {
+    poster: `${MEDIA_BASE}/templates/tabahi-d28888d73852-poster.jpg`,
+    video: `${MEDIA_BASE}/templates/tabahi-868fe6e1a0f0.mp4`,
+  },
+  momentsPop: {
+    poster: `${MEDIA_BASE}/templates/moments-pop-mix-e6e86bcfeecd-poster.webp`,
+    video: undefined,
+  },
   dimensionStory: {
     poster: `${MEDIA_BASE}/real-estate/dimension-story-467f7b881b97-poster.jpg`,
     video: `${MEDIA_BASE}/real-estate/dimension-story-5fc688e2e55b.mp4`,

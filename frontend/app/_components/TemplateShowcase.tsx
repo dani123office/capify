@@ -32,9 +32,25 @@ const FAMILY_COPY: Record<string, string> = {
   social: "Box highlights and clean styles that read at small sizes.",
 };
 
-export function TemplateShowcase({ initial = "popular" }: { initial?: string }) {
+export function TemplateShowcase({
+  initial = "popular",
+  selectedId,
+  onSelectTemplate,
+}: {
+  initial?: string;
+  selectedId?: string;
+  onSelectTemplate?: (t: Template) => void;
+}) {
   const [family, setFamily] = useState(initial);
-  const [selected, setSelected] = useState<string>("kumar");
+  const [internalSelected, setInternalSelected] = useState<string>("blue-muse");
+  const selected = selectedId || internalSelected;
+
+  const handleSelect = (t: Template) => {
+    setInternalSelected(t.id);
+    if (onSelectTemplate) {
+      onSelectTemplate(t);
+    }
+  };
 
   const list =
     family === "popular"
@@ -90,7 +106,7 @@ export function TemplateShowcase({ initial = "popular" }: { initial?: string }) 
             key={card.id}
             template={card}
             selected={selected === card.id}
-            onSelect={(t) => setSelected(t.id)}
+            onSelect={handleSelect}
           />
         ))}
       </div>
