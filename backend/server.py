@@ -241,8 +241,8 @@ def _get_whisper_model():
     if _WHISPER_MODEL is None:
         try:
             from faster_whisper import WhisperModel
-            log.info("Loading faster-whisper base model...")
-            _WHISPER_MODEL = WhisperModel("base", device="cpu", compute_type="int8")
+            log.info("Loading faster-whisper tiny model...")
+            _WHISPER_MODEL = WhisperModel("tiny", device="cpu", compute_type="int8")
             log.info("faster-whisper model loaded successfully")
         except Exception as e:
             log.warning("faster-whisper not available: %s", e)
