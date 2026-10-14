@@ -233,21 +233,18 @@ export const POPULAR_TEMPLATES = TEMPLATES.filter((t) => t.badge !== null);
 
 export function backendTemplateFor(templateId: string): string {
   const map: Record<string, string> = {
-    kumar: "kumar",
-    "magenta-estate": "magenta_estate",
-    "afterglow-mix": "afterglow",
-    discipline: "discipline",
-    "dimension-story": "spatial",
-    "golden-hour": "golden_hour",
-    ghostline: "ghostline",
-    aura: "aura",
-    "red-punch": "red_punch",
-    "neon-reel": "neon",
-    "desi-impact": "desi",
+    headliner: "creator_yellow",
+    "blue-muse": "luxe",
+    "afterglow-mix": "dynamic",
+    "hormozi-green": "creator_yellow",
     "slow-mornings": "editorial",
-    "hormozi-green": "hormozi",
+    "neon-reel": "dynamic",
+    editorial: "editorial",
+    dynamic: "dynamic",
+    luxe: "luxe",
+    creator_yellow: "creator_yellow",
   };
-  return map[templateId] ?? templateId;
+  return map[templateId] ?? "dynamic";
 }
 
 export function getTemplate(id: string): Template | undefined {

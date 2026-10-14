@@ -1,8 +1,10 @@
 import json
+import logging
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parent.parent
 TEMPLATE_DIR = Path(__file__).resolve().parent / "templates"
+log = logging.getLogger("capify")
 
 
 def list_templates() -> list[str]:
@@ -12,5 +14,11 @@ def list_templates() -> list[str]:
 def get_template(name: str) -> dict:
     p = TEMPLATE_DIR / f"{name}.json"
     if not p.exists():
-        raise SystemExit(f"Unknown template '{name}'. Available: {', '.join(list_templates())}")
+        available = list_templates()
+        fallback = "creator_yellow" if "creator_yellow" in available else (available[0] if available else None)
+        log.warning("Template '%s' not found. Falling back to '%s'", name, fallback)
+        if fallback:
+            p = TEMPLATE_DIR / f"{fallback}.json"
+        else:
+            raise ValueError(f"No template found. Available: {', '.join(available)}")
     return json.loads(p.read_text())

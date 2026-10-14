@@ -50,10 +50,10 @@ export function Footer() {
             © {SITE.name} — {SITE.tagline}. All rights reserved.
           </p>
           <div className="flex items-center gap-5 text-xs text-slate-400">
-            <Link href="/#faq" className="transition hover:text-brand">
+            <Link href="/terms" className="transition hover:text-brand">
               Terms
             </Link>
-            <Link href="/#faq" className="transition hover:text-brand">
+            <Link href="/privacy" className="transition hover:text-brand">
               Privacy
             </Link>
             <a href={`mailto:${SITE.supportEmail}`} className="transition hover:text-brand">

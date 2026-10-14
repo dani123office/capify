@@ -45,15 +45,18 @@ export const FOOTER_NAV: { title: string; items: NavItem[] }[] = [
       { label: "Caption templates", href: "/caption-templates" },
       { label: "Pricing", href: "/pricing" },
       { label: "How it works", href: "/#how-it-works" },
+      { label: "AI thumbnail maker", href: "/tools/ai-thumbnail" },
+      { label: "Video watermark remover", href: "/tools/watermark-remover" },
+      { label: "Image cleaner", href: "/tools/ai-watermark-remover" },
     ],
   },
   {
     title: "Compare",
     items: [
-      { label: "Capify vs Captions.ai", href: "/compare#captions-ai" },
-      { label: "Capify vs Submagic", href: "/compare#submagic" },
-      { label: "Capify vs OpusClip", href: "/compare#opusclip" },
-      { label: "Capify vs CapCut", href: "/compare#capcut" },
+      { label: "vs Captions.ai", href: "/compare/moonshot-vs-captions-ai" },
+      { label: "vs VEED", href: "/compare/moonshot-vs-veed" },
+      { label: "vs OpusClip", href: "/compare/moonshot-vs-opusclip" },
+      { label: "Compare All", href: "/compare" },
     ],
   },
   {
@@ -61,17 +64,19 @@ export const FOOTER_NAV: { title: string; items: NavItem[] }[] = [
     items: [
       { label: "Blog", href: "/blog" },
       { label: "Help & FAQ", href: "/#faq" },
-      { label: "AI caption generator", href: "/#editor" },
-      { label: "Text behind person", href: "/#how-it-works" },
+      { label: "Short-form guide", href: "/blog/short-form-video-workflow" },
+      { label: "Caption safe zones", href: "/blog/where-to-put-captions-vertical-video" },
     ],
   },
   {
     title: "Company",
     items: [
-      { label: "About", href: "/compare" },
+      { label: "About", href: "/about" },
+      { label: "Terms of Service", href: "/terms" },
+      { label: "Privacy Policy", href: "/privacy" },
+      { label: "Font Licences & Credits", href: "/licenses" },
+      { label: "Copyright & IP", href: "/copyright" },
       { label: "Contact", href: "mailto:hi@capify.ai" },
-      { label: "Terms", href: "/compare" },
-      { label: "Privacy", href: "/compare" },
     ],
   },
 ];
