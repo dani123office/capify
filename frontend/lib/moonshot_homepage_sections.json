@@ -1,0 +1,1974 @@
+[
+  {
+    "id": "popular",
+    "label": "Popular",
+    "hasAi": true,
+    "description": "Community favourites, trending styles, and something worth trying.",
+    "cards": [
+      {
+        "id": "headliner",
+        "name": "Headliner",
+        "treatment": "Red condensed type against luminous white script.",
+        "poster": "/moonshot/landing/multiline/ml-blockbuster-377e68e4da16-poster.jpg",
+        "video": "/moonshot/landing/multiline/ml-blockbuster-c28d727ca52b.mp4",
+        "badge": "POPULAR"
+      },
+      {
+        "id": "blue-muse",
+        "name": "Blue Muse",
+        "treatment": "Playfair italic, compact support type, and one ice-blue uppercase key.",
+        "poster": "/moonshot/landing/multiline/ml-aura-061aa4b4fa90-poster.jpg",
+        "video": "/moonshot/landing/multiline/ml-aura-22a6a4a0dd8f.mp4",
+        "badge": "POPULAR"
+      },
+      {
+        "id": "tabahi",
+        "name": "Tabahi",
+        "treatment": "Full hype: comic caps over a rounded Hinglish line.",
+        "poster": "/moonshot/landing/templates/tabahi-d28888d73852-poster.jpg",
+        "video": "/moonshot/landing/templates/tabahi-868fe6e1a0f0.mp4",
+        "badge": "TRENDING"
+      },
+      {
+        "id": "moments-pop",
+        "name": "Moments Pop",
+        "treatment": "Bold lime and pink cards with ink outlines and stickers, landing on the word.",
+        "poster": "/moonshot/landing/templates/moments-pop-mix-e6e86bcfeecd-poster.webp",
+        "video": null,
+        "badge": "PRO"
+      },
+      {
+        "id": "reach-counter",
+        "name": "Number Story",
+        "treatment": "Statistics count up beside sliding captions and your screenshot cards.",
+        "poster": "/moonshot/landing/real-estate/reach-counter-39f1fb1666db-poster.jpg",
+        "video": "/moonshot/landing/real-estate/reach-counter-a55ff22eb6be.mp4"
+      },
+      {
+        "id": "magenta-estate",
+        "name": "Gradient Estate",
+        "treatment": "Outlined amounts, bold magenta words, and montages of your property photos.",
+        "poster": "/moonshot/landing/real-estate/magenta-estate-ce994c661c95-poster.jpg",
+        "video": "/moonshot/landing/real-estate/magenta-estate-897c94e9e9e9.mp4"
+      },
+      {
+        "id": "dimension-story",
+        "name": "Dimension Story",
+        "treatment": "Rising, bouncing phrases, raised lettering, and colorful words layered around you.",
+        "poster": "/moonshot/landing/real-estate/dimension-story-467f7b881b97-poster.jpg",
+        "video": "/moonshot/landing/real-estate/dimension-story-5fc688e2e55b.mp4"
+      },
+      {
+        "id": "afterglow",
+        "name": "Afterglow",
+        "treatment": "Wide caps with a glowing cyan script, tilted frames, cover flow and light beams.",
+        "poster": "/moonshot/landing/templates/afterglow-mix-84eb4c616ea8-poster.webp",
+        "video": "/moonshot/landing/templates/afterglow-mix-5ed9bc5882b8.mp4"
+      },
+      {
+        "id": "ca-golden-hour",
+        "name": "Golden Hour",
+        "treatment": "Large pale-yellow editorial words frame a smaller matching subtitle.",
+        "poster": "/moonshot/landing/contentaware/ca-golden-hour-4e88d3503fbb-poster.jpg",
+        "video": "/moonshot/landing/contentaware/ca-golden-hour-f25a3468f99b.mp4"
+      },
+      {
+        "id": "ca-ghostline",
+        "name": "Ghostline",
+        "treatment": "A dense white headline cuts through the subject above a compact subtitle.",
+        "poster": "/moonshot/landing/contentaware/ca-ghostline-93a6d362bbb5-poster.jpg",
+        "video": "/moonshot/landing/contentaware/ca-ghostline-9c9d95268b6f.mp4"
+      },
+      {
+        "id": "ca-cutout",
+        "name": "Cutout",
+        "treatment": "Large centered phrases build across two rows with an inverted hero word.",
+        "poster": "/moonshot/landing/contentaware/ca-cutout-d1759b224c5e-poster.jpg",
+        "video": "/moonshot/landing/contentaware/ca-cutout-4fca888b6394.mp4"
+      },
+      {
+        "id": "ml-aura",
+        "name": "Blue Muse",
+        "treatment": "Playfair italic, compact support type, and one ice-blue uppercase key.",
+        "poster": "/moonshot/landing/multiline/ml-aura-cc34854264e5-poster.jpg",
+        "video": "/moonshot/landing/multiline/ml-aura-22a6a4a0dd8f.mp4"
+      },
+      {
+        "id": "agent-story",
+        "name": "Agent Story",
+        "treatment": "Big yellow headlines, outlined amounts, glowing icons, and small spoken captions.",
+        "poster": "/moonshot/landing/real-estate/agent-story-7d8ce6de02f3-poster.jpg",
+        "video": "/moonshot/landing/real-estate/agent-story-3e56c01ecddc.mp4"
+      },
+      {
+        "id": "ca-split",
+        "name": "Eclipse",
+        "treatment": "Key word locks behind you; subtitles ride your chest.",
+        "poster": "/moonshot/landing/behind/ca-split-1e51930043e7-poster.jpg",
+        "video": "/moonshot/landing/behind/ca-split-0091a024270a.mp4"
+      },
+      {
+        "id": "social-yellow",
+        "name": "Floodlight",
+        "treatment": "Yellow box, black ink on the key word.",
+        "poster": "/moonshot/landing/popular/social-yellow-b6580173d114-poster.jpg",
+        "video": "/moonshot/landing/popular/social-yellow-8efb633e312f.mp4"
+      },
+      {
+        "id": "dyn-stretch",
+        "name": "Inception",
+        "treatment": "Impact words invert the footage and fill the frame.",
+        "poster": "/moonshot/landing/dynamic/dyn-stretch-96fda7495065-poster.jpg",
+        "video": "/moonshot/landing/dynamic/dyn-stretch-44fa415c593c.mp4"
+      }
+    ]
+  },
+  {
+    "id": "ai-edits",
+    "label": "AI Edits",
+    "hasAi": true,
+    "description": "Full turnkey treatments \u2014 content-aware titles, scene changes and motion.",
+    "cards": [
+      {
+        "id": "stack",
+        "name": "Boldface",
+        "treatment": "Bold captions with a boxed word, rounded video cards, and giant scrolling type.",
+        "poster": "/moonshot/landing/templates/stack-mix-1bf7e00c95b6-poster.webp",
+        "video": "/moonshot/landing/templates/stack-mix-c63cc74849da.mp4"
+      },
+      {
+        "id": "bloom",
+        "name": "Petal",
+        "treatment": "Soft editorial captions, arch frames, and caps titles crossed by script.",
+        "poster": "/moonshot/landing/templates/bloom-mix-f7817aff51a1-poster.webp",
+        "video": "/moonshot/landing/templates/bloom-mix-f2a07620e490.mp4"
+      },
+      {
+        "id": "prism",
+        "name": "Refract",
+        "treatment": "Words that build in, one huge chrome word, and zoom-blur cuts.",
+        "poster": "/moonshot/landing/templates/prism-mix-7335c6edfc0a-poster.webp",
+        "video": "/moonshot/landing/templates/prism-mix-834fb8bb39ee.mp4"
+      },
+      {
+        "id": "elevate",
+        "name": "Matinee",
+        "treatment": "Cinematic serif captions, script film titles, and soft split screens.",
+        "poster": "/moonshot/landing/templates/elevate-mix-1ca49d42ca0e-poster.webp",
+        "video": "/moonshot/landing/templates/elevate-mix-4613de724d03.mp4"
+      },
+      {
+        "id": "riso",
+        "name": "Riso",
+        "treatment": "Two-ink duotone prints, misregistered titles, halftone and stickers.",
+        "poster": "/moonshot/landing/templates/riso-mix-616b5a3e94c2-poster.webp",
+        "video": "/moonshot/landing/templates/riso-mix-62fef7819af8.mp4"
+      },
+      {
+        "id": "blueprint",
+        "name": "Schematic",
+        "treatment": "Bold caps with an underlined key word, graph paper, and selection boxes.",
+        "poster": "/moonshot/landing/templates/blueprint-mix-5438568bdf7a-poster.webp",
+        "video": "/moonshot/landing/templates/blueprint-mix-01c13c9e7a38.mp4"
+      },
+      {
+        "id": "darkroom",
+        "name": "Darkroom",
+        "treatment": "Typed warm captions, film frames, light leaks and a date stamp.",
+        "poster": "/moonshot/landing/templates/darkroom-mix-0233dc17bf4b-poster.webp",
+        "video": "/moonshot/landing/templates/darkroom-mix-5f76a949d04b.mp4"
+      },
+      {
+        "id": "chalk",
+        "name": "Blackboard",
+        "treatment": "Handwritten caption chips, rear chalk words, and heavy outline hits.",
+        "poster": "/moonshot/landing/templates/chalk-mix-2ade4d3ab30d-poster.webp",
+        "video": "/moonshot/landing/templates/chalk-mix-7ceecab1ddf6.mp4"
+      },
+      {
+        "id": "sketch",
+        "name": "Marginalia",
+        "treatment": "Handwritten captions, circled keywords, and a notebook layout for every section.",
+        "poster": "/moonshot/landing/templates/sketch-mix-b47c97760131-poster.webp",
+        "video": "/moonshot/landing/templates/sketch-mix-525e261f026b.mp4"
+      },
+      {
+        "id": "align",
+        "name": "Gallery",
+        "treatment": "Swiss-minimal mono captions in a white label, and edge-aligned frames.",
+        "poster": "/moonshot/landing/templates/align-mix-e84186b16ae6-poster.webp",
+        "video": "/moonshot/landing/templates/align-mix-d9b7c8783a81.mp4"
+      },
+      {
+        "id": "archive",
+        "name": "Dossier",
+        "treatment": "Documentary caps that fill as they are spoken, stacked hooks, and push cuts.",
+        "poster": "/moonshot/landing/templates/archive-mix-4f1233e2267c-poster.webp",
+        "video": "/moonshot/landing/templates/archive-mix-394ffbbc9ef5.mp4"
+      },
+      {
+        "id": "zine",
+        "name": "Daydream",
+        "treatment": "Hand-lettered caps, paper clouds, pencil doodles, and collage.",
+        "poster": "/moonshot/landing/templates/zine-mix-966c2707e962-poster.webp",
+        "video": "/moonshot/landing/templates/zine-mix-356580a2881c.mp4"
+      },
+      {
+        "id": "notes",
+        "name": "Notes",
+        "treatment": "Highlighter captions, ticking note cards, screenshots and scribbles.",
+        "poster": "/moonshot/landing/templates/notes-mix-a3c3eda8d719-poster.webp",
+        "video": "/moonshot/landing/templates/notes-mix-2e9ce1537e59.mp4"
+      },
+      {
+        "id": "vinyl",
+        "name": "B-Side",
+        "treatment": "Cream label captions, poster bands, and long-shadow cards on a mustard sleeve.",
+        "poster": "/moonshot/landing/templates/vinyl-mix-52c189bd367c-poster.webp",
+        "video": "/moonshot/landing/templates/vinyl-mix-0be984d65353.mp4"
+      },
+      {
+        "id": "overclock",
+        "name": "Overclock",
+        "treatment": "Lime italic keywords, outlined caps behind you, scanlines and a viewfinder.",
+        "poster": "/moonshot/landing/templates/overclock-mix-85b713e5a6fa-poster.webp",
+        "video": "/moonshot/landing/templates/overclock-mix-e97e49b8396e.mp4"
+      },
+      {
+        "id": "feed",
+        "name": "Feed",
+        "treatment": "Condensed caps with a blue keyword, glass cards that scroll into place, bokeh and neon.",
+        "poster": "/moonshot/landing/templates/feed-mix-28c1bf1360d7-poster.webp",
+        "video": "/moonshot/landing/templates/feed-mix-61ba109eb4dd.mp4"
+      },
+      {
+        "id": "arcade",
+        "name": "Arcade",
+        "treatment": "Glowing neon caps, lightning hooks, kaleidoscope cuts and bloomed B-roll.",
+        "poster": "/moonshot/landing/templates/arcade-mix-4014e14debe3-poster.webp",
+        "video": "/moonshot/landing/templates/arcade-mix-2d895845f41c.mp4"
+      },
+      {
+        "id": "afterglow",
+        "name": "Afterglow",
+        "treatment": "Wide caps with a glowing cyan script, tilted frames, cover flow and light beams.",
+        "poster": "/moonshot/landing/templates/afterglow-mix-84eb4c616ea8-poster.webp",
+        "video": "/moonshot/landing/templates/afterglow-mix-5ed9bc5882b8.mp4"
+      },
+      {
+        "id": "masthead",
+        "name": "Masthead",
+        "treatment": "Editorial captions with a yellow keyword, cover lines, spreads and instant prints.",
+        "poster": "/moonshot/landing/templates/masthead-mix-8a5450757d79-poster.webp",
+        "video": "/moonshot/landing/templates/masthead-mix-150a20c1e0ec.mp4"
+      },
+      {
+        "id": "editorial-grain",
+        "name": "Editorial Grain",
+        "treatment": "Serif magazine pages above your head, a red pen on contrasts, lists and numbers, and fine grain.",
+        "poster": null,
+        "video": null
+      },
+      {
+        "id": "pop-bold",
+        "name": "Pop Bold",
+        "treatment": "Chunky lime captions, neon blocks for every number, list and question, and a pop-up card on close-ups.",
+        "poster": null,
+        "video": null
+      },
+      {
+        "id": "cool-girl",
+        "name": "Cool Girl",
+        "treatment": "Soft butter captions, serif-italic titles for your numbers, lists and questions, a handwritten note.",
+        "poster": null,
+        "video": null
+      },
+      {
+        "id": "bobblehead",
+        "name": "Bobblehead",
+        "treatment": "Your head as a bobbling sticker with a giant mic, sticker labels for every number and list, on denim.",
+        "poster": null,
+        "video": null
+      },
+      {
+        "id": "slab",
+        "name": "Slab",
+        "treatment": "Brick tape captions, giant words that slip behind you, strikes, stamps and a counter.",
+        "poster": null,
+        "video": null
+      },
+      {
+        "id": "moments-grain",
+        "name": "Moments Grain",
+        "treatment": "Paper-slip cards in a serif with red marks, landing on the word.",
+        "poster": null,
+        "video": null
+      },
+      {
+        "id": "moments-pop",
+        "name": "Moments Pop",
+        "treatment": "Bold lime and pink cards with ink outlines and stickers, landing on the word.",
+        "poster": null,
+        "video": null
+      },
+      {
+        "id": "podcast-cutout",
+        "name": "Podcast Cutout",
+        "treatment": "You cut out on black with a white ring, giant words behind your head and a red banner.",
+        "poster": null,
+        "video": null
+      },
+      {
+        "id": "grid-notes",
+        "name": "Grid Notes",
+        "treatment": "Serif notes on maroon grid paper, marks in your captions, and you as a sticker on the board.",
+        "poster": null,
+        "video": null
+      },
+      {
+        "id": "moodboard",
+        "name": "Moodboard",
+        "treatment": "Tape, pinned tags and stickers land on the word; lists and definitions pinned on a pastel board.",
+        "poster": null,
+        "video": null
+      },
+      {
+        "id": "keepsake",
+        "name": "Keepsake",
+        "treatment": "Soft print moments in serif and script, a letter in an envelope with a wax seal, an ornate frame.",
+        "poster": null,
+        "video": null
+      },
+      {
+        "id": "cutout-board",
+        "name": "Cutout Board",
+        "treatment": "Green graph paper, a traced cutout, and mixed paper-label captions around you.",
+        "poster": "/moonshot/landing/templates/cutout-board-dbc370c8f5f8-poster.jpg",
+        "video": "/moonshot/landing/templates/cutout-board-a407b8543ac7.mp4"
+      }
+    ]
+  },
+  {
+    "id": "real-estate",
+    "label": "Real Estate",
+    "hasAi": true,
+    "description": "Show property prices, listing numbers, and stories with layered captions.",
+    "cards": [
+      {
+        "id": "agent-story",
+        "name": "Agent Story",
+        "treatment": "Big yellow headlines, outlined amounts, glowing icons, and small spoken captions.",
+        "poster": "/moonshot/landing/real-estate/agent-story-7d8ce6de02f3-poster.jpg",
+        "video": "/moonshot/landing/real-estate/agent-story-3e56c01ecddc.mp4"
+      },
+      {
+        "id": "reach-counter",
+        "name": "Number Story",
+        "treatment": "Statistics count up beside sliding captions and your screenshot cards.",
+        "poster": "/moonshot/landing/real-estate/reach-counter-39f1fb1666db-poster.jpg",
+        "video": "/moonshot/landing/real-estate/reach-counter-a55ff22eb6be.mp4"
+      },
+      {
+        "id": "magenta-estate",
+        "name": "Gradient Estate",
+        "treatment": "Outlined amounts, bold magenta words, and montages of your property photos.",
+        "poster": "/moonshot/landing/real-estate/magenta-estate-ce994c661c95-poster.jpg",
+        "video": "/moonshot/landing/real-estate/magenta-estate-897c94e9e9e9.mp4"
+      },
+      {
+        "id": "dimension-story",
+        "name": "Dimension Story",
+        "treatment": "Rising, bouncing phrases, raised lettering, and colorful words layered around you.",
+        "poster": "/moonshot/landing/real-estate/dimension-story-467f7b881b97-poster.jpg",
+        "video": "/moonshot/landing/real-estate/dimension-story-5fc688e2e55b.mp4"
+      },
+      {
+        "id": "luma-word",
+        "name": "Luma Word",
+        "treatment": "A bold word rises into place with blue and white ink that responds to your video.",
+        "poster": null,
+        "video": null
+      },
+      {
+        "id": "amber-pass",
+        "name": "Amber Pass",
+        "treatment": "Warm amber lettering responds to the video while small words glide across it.",
+        "poster": null,
+        "video": null
+      },
+      {
+        "id": "glass-headline",
+        "name": "Glass Headline",
+        "treatment": "Two clean white lines lead into a green headline that responds to the video.",
+        "poster": null,
+        "video": null
+      }
+    ]
+  },
+  {
+    "id": "spatial",
+    "label": "Spatial",
+    "hasAi": true,
+    "description": "Words placed around you in 3D, tracked to the camera as it moves.",
+    "cards": [
+      {
+        "id": "spatial-red",
+        "name": "Spatial Red",
+        "treatment": "Small warm words and huge red uppercase heroes posted around your shot, tracked to the camera.",
+        "poster": "/moonshot/landing/templates/spatial-red-0b79a5f3668b-poster.jpg",
+        "video": "/moonshot/landing/templates/spatial-red-2d96a671a0d7.mp4"
+      },
+      {
+        "id": "spatial-yellow",
+        "name": "Spatial Yellow",
+        "treatment": "Heavy white lines build around you while glowing yellow words slide in; plain words come one at a time.",
+        "poster": "/moonshot/landing/templates/spatial-yellow-83252cd2ea0f-poster.jpg",
+        "video": "/moonshot/landing/templates/spatial-yellow-17d4e7e32c85.mp4"
+      },
+      {
+        "id": "spatial-white",
+        "name": "Spatial White",
+        "treatment": "Words arc over your head and across your chest in 3D; the red one lands biggest.",
+        "poster": "/moonshot/landing/templates/spatial-white-f0fd8b0bb942-poster.jpg",
+        "video": "/moonshot/landing/templates/spatial-white-ef66c9059911.mp4"
+      }
+    ]
+  },
+  {
+    "id": "behind-the-person",
+    "label": "Behind the Person",
+    "hasAi": true,
+    "description": "Big statement text rendered behind the speaker.",
+    "cards": [
+      {
+        "id": "ca-sprayline",
+        "name": "Sprayline",
+        "treatment": "A red spray-painted phrase fills the frame behind clean serif captions.",
+        "poster": "/moonshot/landing/contentaware/ca-sprayline-2348e9a656d8-poster.jpg",
+        "video": "/moonshot/landing/contentaware/ca-sprayline-600b8c0123d9.mp4"
+      },
+      {
+        "id": "ca-golden-hour",
+        "name": "Golden Hour",
+        "treatment": "Large pale-yellow editorial words frame a smaller matching subtitle.",
+        "poster": "/moonshot/landing/contentaware/ca-golden-hour-4e88d3503fbb-poster.jpg",
+        "video": "/moonshot/landing/contentaware/ca-golden-hour-f25a3468f99b.mp4"
+      },
+      {
+        "id": "ca-ghostline",
+        "name": "Ghostline",
+        "treatment": "A dense white headline cuts through the subject above a compact subtitle.",
+        "poster": "/moonshot/landing/contentaware/ca-ghostline-93a6d362bbb5-poster.jpg",
+        "video": "/moonshot/landing/contentaware/ca-ghostline-9c9d95268b6f.mp4"
+      },
+      {
+        "id": "ca-acid-slide",
+        "name": "Lime Swipe",
+        "treatment": "A black italic phrase slides across a sharp lime plate.",
+        "poster": "/moonshot/landing/contentaware/ca-acid-slide-638543ae6b2f-poster.jpg",
+        "video": "/moonshot/landing/contentaware/ca-acid-slide-96ca78c01658.mp4"
+      },
+      {
+        "id": "ca-monument",
+        "name": "Monument",
+        "treatment": "A lime uppercase hit drops above a loose handwritten subtitle.",
+        "poster": "/moonshot/landing/contentaware/ca-monument-02d6b6da82eb-poster.jpg",
+        "video": "/moonshot/landing/contentaware/ca-monument-0f92b7b39d91.mp4"
+      },
+      {
+        "id": "ca-sunburst",
+        "name": "Sunburst",
+        "treatment": "A bright yellow headline bounces behind a small serif subtitle.",
+        "poster": "/moonshot/landing/contentaware/ca-sunburst-7da2fbbd5a9a-poster.jpg",
+        "video": "/moonshot/landing/contentaware/ca-sunburst-eede2895a18e.mp4"
+      },
+      {
+        "id": "ca-crimson",
+        "name": "Crimson",
+        "treatment": "A red editorial phrase sits behind a soft-white matching subtitle.",
+        "poster": "/moonshot/landing/contentaware/ca-crimson-09e5bb762875-poster.jpg",
+        "video": "/moonshot/landing/contentaware/ca-crimson-0ea1137ea9a3.mp4"
+      },
+      {
+        "id": "ca-red",
+        "name": "Gatekeep",
+        "treatment": "White subtitles up front, a royal-blue brush-script word behind you.",
+        "poster": "/moonshot/landing/behind/ca-red-adeee7dfeb88-poster.jpg",
+        "video": "/moonshot/landing/behind/ca-red-6dc2ce2fc42e.mp4"
+      },
+      {
+        "id": "ca-yellow",
+        "name": "Retro Cut",
+        "treatment": "Typewriter subtitles in front, an 8-bit pixel word behind you.",
+        "poster": "/moonshot/landing/behind/ca-yellow-97004df65560-poster.jpg",
+        "video": "/moonshot/landing/behind/ca-yellow-edd5627af37e.mp4"
+      },
+      {
+        "id": "ca-editorial",
+        "name": "Sticker",
+        "treatment": "Cream subtitles in front, a chunky comic word behind you.",
+        "poster": "/moonshot/landing/behind/ca-editorial-0baf37d1b8b1-poster.jpg",
+        "video": "/moonshot/landing/behind/ca-editorial-f09081272ab1.mp4"
+      },
+      {
+        "id": "ca-blue",
+        "name": "Calligraph",
+        "treatment": "Soft-white subtitles, an ornate cobalt calligraphy word behind you.",
+        "poster": "/moonshot/landing/behind/ca-blue-f5be9a766837-poster.jpg",
+        "video": "/moonshot/landing/behind/ca-blue-feb29d619b2d.mp4"
+      },
+      {
+        "id": "ca-mix",
+        "name": "Soundwave",
+        "treatment": "Warm-white subtitles in front, a fat rounded olive word behind you.",
+        "poster": "/moonshot/landing/behind/ca-mix-420947b0d28b-poster.jpg",
+        "video": "/moonshot/landing/behind/ca-mix-2ea076464e77.mp4"
+      },
+      {
+        "id": "ca-neon",
+        "name": "Signal",
+        "treatment": "Neon-green impact word behind you, plain white subtitles in front.",
+        "poster": "/moonshot/landing/behind/ca-neon-88f0aee079e9-poster.jpg",
+        "video": "/moonshot/landing/behind/ca-neon-668165f75cfe.mp4"
+      },
+      {
+        "id": "kumar",
+        "name": "Kumar",
+        "treatment": "A big red editorial serif locks behind you; clean white subtitles in front.",
+        "poster": "/moonshot/landing/behind/kumar-804e43690b25-poster.jpg",
+        "video": "/moonshot/landing/behind/kumar-3a282647bb39.mp4"
+      },
+      {
+        "id": "depth",
+        "name": "Deep Focus",
+        "treatment": "Text sits in real 3D space behind you.",
+        "poster": "/moonshot/landing/behind/depth-38dfb59ff1c1-poster.jpg",
+        "video": "/moonshot/landing/behind/depth-0b5690999f7b.mp4"
+      },
+      {
+        "id": "ca-split",
+        "name": "Eclipse",
+        "treatment": "Key word locks behind you; subtitles ride your chest.",
+        "poster": "/moonshot/landing/behind/ca-split-1e51930043e7-poster.jpg",
+        "video": "/moonshot/landing/behind/ca-split-0091a024270a.mp4"
+      },
+      {
+        "id": "tailored-type",
+        "name": "Tailored Type",
+        "treatment": "Magazine type pairs clean context, sweeping script, and tall condensed headlines.",
+        "poster": null,
+        "video": null
+      },
+      {
+        "id": "purple-stack",
+        "name": "Purple Stack",
+        "treatment": "Normal subtitles alternate with mixed-font lavender headlines behind you.",
+        "poster": null,
+        "video": null
+      },
+      {
+        "id": "lime-depth",
+        "name": "Lime Depth",
+        "treatment": "A white setup line stays in front while its lime payoff passes behind you.",
+        "poster": null,
+        "video": null
+      },
+      {
+        "id": "pastel-lens",
+        "name": "Pastel Fisheye",
+        "treatment": "Pastel editorial type bends around you with a fisheye lens.",
+        "poster": "/moonshot/landing/contentaware/pastel-lens-bb5f8cd40e90-poster.jpg",
+        "video": "/moonshot/landing/contentaware/pastel-lens-0ac1a1ebaa14.mp4"
+      }
+    ]
+  },
+  {
+    "id": "playful",
+    "label": "Playful",
+    "hasAi": true,
+    "description": "Captions that pop in around you \u2014 auto-placed, never on your face.",
+    "cards": [
+      {
+        "id": "blush-lab",
+        "name": "Blush Lab",
+        "treatment": "Tight blush captions type across two rows, then land on one butter word.",
+        "poster": "/moonshot/landing/templates/blush-lab-fb70b1016f2c-poster.jpg",
+        "video": "/moonshot/landing/templates/blush-lab-25bdcb2ec143.mp4"
+      },
+      {
+        "id": "butter-hook",
+        "name": "Butter Hook",
+        "treatment": "White word-timed subtitles lead into one sliding butter-yellow hook.",
+        "poster": null,
+        "video": null
+      },
+      {
+        "id": "ca-cutout",
+        "name": "Cutout",
+        "treatment": "Large centered phrases build across two rows with an inverted hero word.",
+        "poster": "/moonshot/landing/contentaware/ca-cutout-d1759b224c5e-poster.jpg",
+        "video": "/moonshot/landing/contentaware/ca-cutout-4fca888b6394.mp4"
+      },
+      {
+        "id": "pink-notes",
+        "name": "Pink Notes",
+        "treatment": "Clean subtitles switch into handwritten labels, pink titles, and curved yellow keywords.",
+        "poster": null,
+        "video": null
+      },
+      {
+        "id": "sticker-stack",
+        "name": "Sticker Stack",
+        "treatment": "Brown lowercase words stack on pinned white and yellow sticker outlines.",
+        "poster": null,
+        "video": null
+      },
+      {
+        "id": "fur-text",
+        "name": "Pink Fur",
+        "treatment": "Soft pink long-pile letters lifted above the footage.",
+        "poster": null,
+        "video": null
+      },
+      {
+        "id": "plush-text",
+        "name": "Pink Plush",
+        "treatment": "Vivid pink short-nap velvet with a rounded padded edge.",
+        "poster": null,
+        "video": null
+      },
+      {
+        "id": "sheep-text",
+        "name": "Sheep Boucl\u00e9",
+        "treatment": "Cream boucl\u00e9 letters with the video&#x27;s irregular blue patches.",
+        "poster": null,
+        "video": null
+      },
+      {
+        "id": "raised-fur",
+        "name": "Raised Fur 3D",
+        "treatment": "Pale blue fur with the video&#x27;s stronger elevated depth.",
+        "poster": null,
+        "video": null
+      },
+      {
+        "id": "sculpted-fur-text",
+        "name": "Sculpted Fur",
+        "treatment": "Soft pink long-pile letters lifted above the footage.",
+        "poster": null,
+        "video": null
+      },
+      {
+        "id": "sculpted-plush-text",
+        "name": "Sculpted Plush",
+        "treatment": "Vivid pink short-nap velvet with a rounded padded edge.",
+        "poster": null,
+        "video": null
+      },
+      {
+        "id": "sculpted-sheep-text",
+        "name": "Sculpted Boucl\u00e9",
+        "treatment": "Cream boucl\u00e9 letters with the video&#x27;s irregular blue patches.",
+        "poster": null,
+        "video": null
+      },
+      {
+        "id": "sculpted-raised-fur",
+        "name": "Sculpted Blue Fur",
+        "treatment": "Pale blue fur with the video&#x27;s stronger elevated depth.",
+        "poster": null,
+        "video": null
+      },
+      {
+        "id": "satin-pillow-text",
+        "name": "Satin Pillow",
+        "treatment": "Rose satin cushion letters with soft highlights and stitched edges.",
+        "poster": null,
+        "video": null
+      },
+      {
+        "id": "whipped-cream-text",
+        "name": "Whipped Cream",
+        "treatment": "Piped ivory lettering with curved ridges and pastel sprinkles.",
+        "poster": null,
+        "video": null
+      },
+      {
+        "id": "soft-fluffy-text",
+        "name": "Soft Fluffy",
+        "treatment": "Rounded lavender fleece letters with a softly raised face.",
+        "poster": null,
+        "video": null
+      },
+      {
+        "id": "play-butter",
+        "name": "Butter",
+        "treatment": "Tiny white asides up top; big butter-yellow words lock behind you.",
+        "poster": "/moonshot/landing/playful/play-butter-4b375fd6e0f0-poster.jpg",
+        "video": "/moonshot/landing/playful/play-butter-c39773a5b58a.mp4"
+      },
+      {
+        "id": "play-cursive",
+        "name": "Cursive",
+        "treatment": "Butter script + rounded heroes around you; tiny white ticker up top.",
+        "poster": "/moonshot/landing/playful/play-cursive-73a13f6fe847-poster.jpg",
+        "video": "/moonshot/landing/playful/play-cursive-2abc871d38a3.mp4"
+      }
+    ]
+  },
+  {
+    "id": "multiline",
+    "label": "Multiline",
+    "hasAi": true,
+    "description": "Three-line font lockups with a single hero word.",
+    "cards": [
+      {
+        "id": "ca-fireline",
+        "name": "Fireline",
+        "treatment": "Handwritten white lines build into a rising yellow title.",
+        "poster": "/moonshot/landing/multiline/ca-fireline-a6da395e68c6-poster.jpg",
+        "video": "/moonshot/landing/multiline/ca-fireline-daacb62f1906.mp4"
+      },
+      {
+        "id": "ca-focusline",
+        "name": "Focusline",
+        "treatment": "Editorial caption lockups that respond to each spoken idea.",
+        "poster": "/moonshot/landing/contentaware/ca-focusline-a463c5d5c6f1-poster.jpg",
+        "video": "/moonshot/landing/contentaware/ca-focusline-d77288cd6252.mp4"
+      },
+      {
+        "id": "ml-halo",
+        "name": "Moonbeam",
+        "treatment": "A glowing hero spans two of three fixed caption lanes.",
+        "poster": "/moonshot/landing/multiline/ml-halo-1ba8893e45b5-poster.jpg",
+        "video": "/moonshot/landing/multiline/ml-halo-15ff3afc4530.mp4"
+      },
+      {
+        "id": "ml-illusion",
+        "name": "Supernova",
+        "treatment": "Small white context with one oversized editorial hit.",
+        "poster": "/moonshot/landing/multiline/ml-illusion-7cbd9c83c203-poster.jpg",
+        "video": "/moonshot/landing/multiline/ml-illusion-03e01989aae2.mp4"
+      },
+      {
+        "id": "ml-masala",
+        "name": "Gold Centre",
+        "treatment": "Compact context with a hard gold all-caps centre word.",
+        "poster": "/moonshot/landing/multiline/ml-masala-d880d1363793-poster.jpg",
+        "video": "/moonshot/landing/multiline/ml-masala-4f2e96be19f2.mp4"
+      },
+      {
+        "id": "ml-aura",
+        "name": "Blue Muse",
+        "treatment": "Playfair italic, compact support type, and one ice-blue uppercase key.",
+        "poster": "/moonshot/landing/multiline/ml-aura-cc34854264e5-poster.jpg",
+        "video": "/moonshot/landing/multiline/ml-aura-22a6a4a0dd8f.mp4"
+      },
+      {
+        "id": "ml-swiss",
+        "name": "Diagonal",
+        "treatment": "Inter Black roles in a diagonal white-and-yellow editorial lockup.",
+        "poster": "/moonshot/landing/multiline/ml-swiss-54aaf63edc6c-poster.jpg",
+        "video": "/moonshot/landing/multiline/ml-swiss-ca66ad1c1744.mp4"
+      },
+      {
+        "id": "ml-redline",
+        "name": "Red Shift",
+        "treatment": "A tall red hero sits between two restrained white rows.",
+        "poster": "/moonshot/landing/multiline/ml-redline-dc355c6a7e91-poster.jpg",
+        "video": "/moonshot/landing/multiline/ml-redline-9594ea3bbf09.mp4"
+      },
+      {
+        "id": "ml-scribble",
+        "name": "Margin Note",
+        "treatment": "Loose handwritten rows with one warm marker-like word.",
+        "poster": "/moonshot/landing/multiline/ml-scribble-82dae782077f-poster.jpg",
+        "video": "/moonshot/landing/multiline/ml-scribble-aba56143a7aa.mp4"
+      },
+      {
+        "id": "ml-blockbuster",
+        "name": "Headliner",
+        "treatment": "Red condensed type against luminous white script.",
+        "poster": "/moonshot/landing/multiline/ml-blockbuster-0d5ffb0bb89c-poster.jpg",
+        "video": "/moonshot/landing/multiline/ml-blockbuster-c28d727ca52b.mp4"
+      },
+      {
+        "id": "ml-marquee",
+        "name": "Marquee",
+        "treatment": "Red condensed words open into luminous white script.",
+        "poster": null,
+        "video": null
+      },
+      {
+        "id": "ruby-rise",
+        "name": "Ruby Rise",
+        "treatment": "Ivory italic words rise above large red emphasis.",
+        "poster": null,
+        "video": null
+      },
+      {
+        "id": "twin-weight",
+        "name": "Twin Weight",
+        "treatment": "Two white lines stay in place while the spoken line turns bold.",
+        "poster": null,
+        "video": null
+      },
+      {
+        "id": "handwritten-note",
+        "name": "Handwritten Note",
+        "treatment": "White handwriting reveals with a gentle wobble and coral drawn emphasis.",
+        "poster": null,
+        "video": null
+      },
+      {
+        "id": "neon-circuit",
+        "name": "Neon Circuit",
+        "treatment": "Technical white caps cut to a luminous yellow keyword.",
+        "poster": null,
+        "video": null
+      },
+      {
+        "id": "doodle-script",
+        "name": "Doodle Script",
+        "treatment": "Bright handwritten accents, drawn flourishes and varied word entrances.",
+        "poster": null,
+        "video": null
+      },
+      {
+        "id": "orange-cut",
+        "name": "Orange Cut",
+        "treatment": "White bold captions on a compact orange plate.",
+        "poster": null,
+        "video": null
+      },
+      {
+        "id": "gold-punch",
+        "name": "Gold Punch",
+        "treatment": "Yellow geometric caps settle above a crisp dark extruded edge.",
+        "poster": null,
+        "video": null
+      },
+      {
+        "id": "violet-voice",
+        "name": "Violet Voice",
+        "treatment": "Bare violet caps with a soft layered black shadow.",
+        "poster": null,
+        "video": null
+      },
+      {
+        "id": "cream-focus",
+        "name": "Cream Focus",
+        "treatment": "Soft cream lettering builds into oversized emphasis across two lines.",
+        "poster": null,
+        "video": null
+      },
+      {
+        "id": "lime-stack",
+        "name": "Lime Stack",
+        "treatment": "Lowercase words rise into a dense block with lime emphasis.",
+        "poster": null,
+        "video": null
+      },
+      {
+        "id": "citrus-chrome",
+        "name": "Citrus Chrome",
+        "treatment": "Large lime lettering catches a pale stripe of light.",
+        "poster": null,
+        "video": null
+      },
+      {
+        "id": "ink-card",
+        "name": "Ink Card",
+        "treatment": "Words darken as you speak inside a white rounded card.",
+        "poster": null,
+        "video": null
+      },
+      {
+        "id": "mint-bounce",
+        "name": "Mint Bounce",
+        "treatment": "A mint chip bounces behind each spoken word.",
+        "poster": null,
+        "video": null
+      },
+      {
+        "id": "story-notes",
+        "name": "Story Notes",
+        "treatment": "Headlines, handwritten replies and drawn circles tell the story.",
+        "poster": null,
+        "video": null
+      },
+      {
+        "id": "amber-cast",
+        "name": "Amber Cast",
+        "treatment": "Orange emphasis and silver context fade into dark metallic edges.",
+        "poster": null,
+        "video": null
+      },
+      {
+        "id": "black-ink",
+        "name": "Black Ink",
+        "treatment": "Solid black Anton lettering leaves a soft dark edge.",
+        "poster": null,
+        "video": null
+      },
+      {
+        "id": "gold-settle",
+        "name": "Gold Settle",
+        "treatment": "Gold block letters grow gently into place.",
+        "poster": null,
+        "video": null
+      },
+      {
+        "id": "stacked-notes",
+        "name": "Stacked Notes",
+        "treatment": "Separate black caption cards appear one line at a time.",
+        "poster": null,
+        "video": null
+      },
+      {
+        "id": "floating-aside",
+        "name": "Floating Aside",
+        "treatment": "White and gold lines float beside the speaker.",
+        "poster": null,
+        "video": null
+      },
+      {
+        "id": "lime-impact",
+        "name": "Lime Impact",
+        "treatment": "Bold white lines make room for larger lime words.",
+        "poster": null,
+        "video": null
+      },
+      {
+        "id": "ice-flicker",
+        "name": "Ice Flicker",
+        "treatment": "Pale wide lettering turns and flickers into view.",
+        "poster": null,
+        "video": null
+      },
+      {
+        "id": "pink-marker",
+        "name": "Pink Marker",
+        "treatment": "A rough pink strip grows beneath the words as you speak.",
+        "poster": null,
+        "video": null
+      },
+      {
+        "id": "ml-moonshot",
+        "name": "Moonshot Signature",
+        "treatment": "White lines move in front and behind you, with held words and occasional spoken neon highlights.",
+        "poster": null,
+        "video": null
+      },
+      {
+        "id": "pair-tempting-switzer",
+        "name": "Tempting Swiss",
+        "treatment": "A formal script accent overlaps a heavy Swiss-style multiline lockup.",
+        "poster": null,
+        "video": null
+      },
+      {
+        "id": "pair-athelas-vanguard",
+        "name": "Athelas Vanguard",
+        "treatment": "Quiet book-serif rows frame a large condensed display word.",
+        "poster": null,
+        "video": null
+      },
+      {
+        "id": "pair-inter-times",
+        "name": "Inter Times",
+        "treatment": "Small clean sans rows frame a sweeping italic editorial hero.",
+        "poster": null,
+        "video": null
+      },
+      {
+        "id": "pair-arial-epic",
+        "name": "Arial Epic",
+        "treatment": "Neutral supporting rows build toward a squared futuristic hero.",
+        "poster": null,
+        "video": null
+      },
+      {
+        "id": "pair-shadow-balboa",
+        "name": "Shadow Balboa",
+        "treatment": "Loose handwriting overlaps tall, narrow display caps across multiple rows.",
+        "poster": null,
+        "video": null
+      },
+      {
+        "id": "pair-archivo-abril",
+        "name": "Archivo Abril",
+        "treatment": "Heavy grotesque rows frame a high-contrast serif hero.",
+        "poster": null,
+        "video": null
+      },
+      {
+        "id": "ml-powder-stack",
+        "name": "Powder Stack",
+        "treatment": "Powder-blue details gather into a tight pastel stack with one broad cream headline.",
+        "poster": null,
+        "video": null
+      },
+      {
+        "id": "ml-white-rise",
+        "name": "White Rise",
+        "treatment": "Simple white lines rise, fade in, and accumulate around one larger phrase.",
+        "poster": null,
+        "video": null
+      },
+      {
+        "id": "ml-gold-slide",
+        "name": "Gold Slide",
+        "treatment": "Small white setup text over a bold gold-gradient line that rises in word by word.",
+        "poster": null,
+        "video": null
+      }
+    ]
+  },
+  {
+    "id": "dynamic",
+    "label": "Dynamic",
+    "hasAi": false,
+    "description": "Motion-driven per-word emphasis.",
+    "cards": [
+      {
+        "id": "dyn-stretch",
+        "name": "Inception",
+        "treatment": "Impact words invert the footage and fill the frame.",
+        "poster": "/moonshot/landing/dynamic/dyn-stretch-96fda7495065-poster.jpg",
+        "video": "/moonshot/landing/dynamic/dyn-stretch-44fa415c593c.mp4"
+      },
+      {
+        "id": "dyn-linen",
+        "name": "Linen",
+        "treatment": "Letters type on behind a translucent cursor.",
+        "poster": "/moonshot/landing/dynamic/dyn-linen-0f1a11dbbde8-poster.jpg",
+        "video": "/moonshot/landing/dynamic/dyn-linen-59a791182cd5.mp4"
+      },
+      {
+        "id": "dyn-quill",
+        "name": "Quill",
+        "treatment": "A script opener flickers over typed supporting words.",
+        "poster": "/moonshot/landing/dynamic/dyn-quill-791cd618f33f-poster.jpg",
+        "video": "/moonshot/landing/dynamic/dyn-quill-f452c3f3ea8b.mp4"
+      },
+      {
+        "id": "dyn-storyline",
+        "name": "Storyline",
+        "treatment": "Serif key words slide between clean story beats.",
+        "poster": "/moonshot/landing/dynamic/dyn-storyline-886ac93520a4-poster.jpg",
+        "video": "/moonshot/landing/dynamic/dyn-storyline-5926749ea8a6.mp4"
+      },
+      {
+        "id": "dyn-glide",
+        "name": "Glide",
+        "treatment": "A bright script word glides through quiet context.",
+        "poster": "/moonshot/landing/dynamic/dyn-glide-b6aa35b650a5-poster.jpg",
+        "video": "/moonshot/landing/dynamic/dyn-glide-f5b161b64578.mp4"
+      },
+      {
+        "id": "dyn-wiggle",
+        "name": "Wiggle",
+        "treatment": "Hand-painted words trace an organic eight-step path.",
+        "poster": "/moonshot/landing/dynamic/dyn-wiggle-eb12cc1f65bd-poster.jpg",
+        "video": "/moonshot/landing/dynamic/dyn-wiggle-114c633c11f8.mp4"
+      },
+      {
+        "id": "hero-orbit",
+        "name": "Hero Orbit",
+        "treatment": "A bold headline pops into place with smaller words tucked above, below and sideways.",
+        "poster": null,
+        "video": null
+      },
+      {
+        "id": "luma-word",
+        "name": "Luma Word",
+        "treatment": "A bold word rises into place with blue and white ink that responds to your video.",
+        "poster": null,
+        "video": null
+      },
+      {
+        "id": "amber-pass",
+        "name": "Amber Pass",
+        "treatment": "Warm amber lettering responds to the video while small words glide across it.",
+        "poster": null,
+        "video": null
+      },
+      {
+        "id": "glass-headline",
+        "name": "Glass Headline",
+        "treatment": "Two clean white lines lead into a green headline that responds to the video.",
+        "poster": null,
+        "video": null
+      },
+      {
+        "id": "solar-stack",
+        "name": "Solar Stack",
+        "treatment": "An orange headline slides between two white italic words.",
+        "poster": null,
+        "video": null
+      },
+      {
+        "id": "scarlet-sweep",
+        "name": "Scarlet Sweep",
+        "treatment": "White words rise above an italic phrase as its red background fills in.",
+        "poster": null,
+        "video": null
+      },
+      {
+        "id": "blue-rebound",
+        "name": "Blue Rebound",
+        "treatment": "Three glowing rows glide in from opposite sides and settle into place.",
+        "poster": null,
+        "video": null
+      },
+      {
+        "id": "word-balance",
+        "name": "Word Balance",
+        "treatment": "The longest word grows large while smaller words tuck around it.",
+        "poster": null,
+        "video": null
+      },
+      {
+        "id": "serif-glow",
+        "name": "Serif Glow",
+        "treatment": "Soft white captions rise around a colorful italic word.",
+        "poster": null,
+        "video": null
+      },
+      {
+        "id": "chrome-cascade",
+        "name": "Chrome Cascade",
+        "treatment": "Small white lines surround bold yellow and raised blue words.",
+        "poster": null,
+        "video": null
+      },
+      {
+        "id": "neon-press",
+        "name": "Neon Press",
+        "treatment": "Tall red letters land above a glowing white line.",
+        "poster": null,
+        "video": null
+      },
+      {
+        "id": "power-drop",
+        "name": "Power Drop",
+        "treatment": "Three bold words drop into a tight vertical stack.",
+        "poster": null,
+        "video": null
+      },
+      {
+        "id": "wide-burst",
+        "name": "Wide Burst",
+        "treatment": "Yellow and white phrases fly into a changing headline layout.",
+        "poster": null,
+        "video": null
+      },
+      {
+        "id": "azure-slant",
+        "name": "Azure Slant",
+        "treatment": "A white line sits above a slanted blue phrase with a bright center.",
+        "poster": null,
+        "video": null
+      },
+      {
+        "id": "mint-hit",
+        "name": "Blue Punch",
+        "treatment": "Bold blue capitals punch outward on each spoken word, then settle into one line.",
+        "poster": null,
+        "video": null
+      },
+      {
+        "id": "lime-label",
+        "name": "Lime Label",
+        "treatment": "Small white words frame a bold phrase on a lime background.",
+        "poster": null,
+        "video": null
+      },
+      {
+        "id": "paper-stamp",
+        "name": "Paper Stamp",
+        "treatment": "Striped red letters sit inside a cut-paper border and hard shadow.",
+        "poster": null,
+        "video": null
+      },
+      {
+        "id": "type-shuffle",
+        "name": "Type Shuffle",
+        "treatment": "Bold white and blue words build eight different arrangements.",
+        "poster": null,
+        "video": null
+      },
+      {
+        "id": "close-story",
+        "name": "Close Story",
+        "treatment": "Small setup words tuck against a bold white headline as each phrase rises into place.",
+        "poster": null,
+        "video": null
+      },
+      {
+        "id": "signal-line",
+        "name": "Signal Line",
+        "treatment": "A compact line snaps into focus with vivid color on the words that matter.",
+        "poster": null,
+        "video": null
+      }
+    ]
+  },
+  {
+    "id": "editorial",
+    "label": "Editorial",
+    "hasAi": true,
+    "description": "Stacked serif-and-caps lockups. Four lock the hero word behind you.",
+    "cards": [
+      {
+        "id": "slow-mornings",
+        "name": "Slow Mornings",
+        "treatment": "Cream italic words softly fade into view.",
+        "poster": null,
+        "video": null
+      },
+      {
+        "id": "still-time",
+        "name": "Still Time",
+        "treatment": "Bold cream capitals rise into view together.",
+        "poster": null,
+        "video": null
+      },
+      {
+        "id": "chapter-one",
+        "name": "Chapter 01",
+        "treatment": "Cream typewriter letters appear as you speak.",
+        "poster": null,
+        "video": null
+      },
+      {
+        "id": "wish-existed",
+        "name": "Wish Existed",
+        "treatment": "Heavy sky-blue lowercase, set tight.",
+        "poster": null,
+        "video": null
+      },
+      {
+        "id": "whimsical",
+        "name": "Whimsical",
+        "treatment": "White looping script, light and airy.",
+        "poster": null,
+        "video": null
+      },
+      {
+        "id": "be-curious",
+        "name": "Be Curious",
+        "treatment": "Lime pixel type, like an old handheld.",
+        "poster": null,
+        "video": null
+      },
+      {
+        "id": "aura",
+        "name": "Aura",
+        "treatment": "Serif-italic aside over a huge ice-blue word behind you.",
+        "poster": "/moonshot/landing/templates/aura-e9d9585663ce-poster.jpg",
+        "video": "/moonshot/landing/templates/aura-183aeeb3cf70.mp4"
+      },
+      {
+        "id": "delhi",
+        "name": "Delhi",
+        "treatment": "Clean sans, then the key word in glowing serif italic.",
+        "poster": "/moonshot/landing/templates/delhi-17ac85cf1848-poster.jpg",
+        "video": "/moonshot/landing/templates/delhi-10800ae07fb3.mp4"
+      },
+      {
+        "id": "soft-script",
+        "name": "Soft Script",
+        "treatment": "Bold white sans with key words in Playfair italic.",
+        "poster": "/moonshot/landing/templates/soft-script-0f59728a0e39-poster.jpg",
+        "video": "/moonshot/landing/templates/soft-script-37bd87987d8b.mp4"
+      },
+      {
+        "id": "swiss",
+        "name": "Swiss",
+        "treatment": "White lowercase over hard yellow caps. Pure grid.",
+        "poster": "/moonshot/landing/templates/swiss-fdada87c5c25-poster.jpg",
+        "video": "/moonshot/landing/templates/swiss-218c511b8798.mp4"
+      },
+      {
+        "id": "masala",
+        "name": "Masala",
+        "treatment": "A whisper of context, then one huge gold word behind you.",
+        "poster": "/moonshot/landing/templates/masala-f1a05d847fe4-poster.jpg",
+        "video": "/moonshot/landing/templates/masala-27f70d66fea4.mp4"
+      },
+      {
+        "id": "chrome",
+        "name": "Chrome",
+        "treatment": "Liquid-metal caps locked behind the speaker.",
+        "poster": "/moonshot/landing/templates/chrome-7ea8158e5cae-poster.jpg",
+        "video": "/moonshot/landing/templates/chrome-9f99aae80d81.mp4"
+      },
+      {
+        "id": "serif-quote",
+        "name": "Serif Quote",
+        "treatment": "Editorial serif, sentence case, italic amber emphasis.",
+        "poster": "/moonshot/landing/templates/serif-quote-8aca6fee695b-poster.jpg",
+        "video": "/moonshot/landing/templates/serif-quote-c538be439516.mp4"
+      }
+    ]
+  },
+  {
+    "id": "neon-and-fx",
+    "label": "Neon & FX",
+    "hasAi": false,
+    "description": "Glass, glow, pixel and glitch finishes.",
+    "cards": [
+      {
+        "id": "liquid-glass",
+        "name": "Liquid Glass",
+        "treatment": "A translucent frosted-glass pill with a soft luminous rim.",
+        "poster": "/moonshot/landing/templates/liquid-glass-70d2da3425ef-poster.jpg",
+        "video": "/moonshot/landing/templates/liquid-glass-3b308db6ea59.mp4"
+      },
+      {
+        "id": "deep-glow",
+        "name": "Deep Glow",
+        "treatment": "Magenta neon caps that burn through dark footage.",
+        "poster": null,
+        "video": null
+      },
+      {
+        "id": "terminal",
+        "name": "Terminal",
+        "treatment": "Phosphor-green mono that types itself in.",
+        "poster": null,
+        "video": null
+      },
+      {
+        "id": "eight-bit",
+        "name": "8-Bit",
+        "treatment": "Arcade pixel type for gaming clips.",
+        "poster": null,
+        "video": null
+      },
+      {
+        "id": "glitch-pop",
+        "name": "Glitch Pop",
+        "treatment": "Chromatic RGB split on every spoken word.",
+        "poster": null,
+        "video": null
+      },
+      {
+        "id": "comic-burst",
+        "name": "Comic Burst",
+        "treatment": "Tilted comic caps; heroes stamp on yellow.",
+        "poster": null,
+        "video": null
+      }
+    ]
+  },
+  {
+    "id": "creators",
+    "label": "Creators",
+    "hasAi": false,
+    "description": "The signature looks people ask for by name.",
+    "cards": [
+      {
+        "id": "acid-lesson",
+        "name": "Acid Lesson",
+        "treatment": "Rounded tutorial type in acid lime, oxblood red, and warm paper cream.",
+        "poster": null,
+        "video": null
+      },
+      {
+        "id": "sketch-track",
+        "name": "Sketch Track",
+        "treatment": "Yellow sketched hero words rise out of compact white handwritten subtitles.",
+        "poster": null,
+        "video": null
+      },
+      {
+        "id": "hormozi-green",
+        "name": "Hormozi",
+        "treatment": "Acid-green gradient caps; the key word punches out.",
+        "poster": "/moonshot/landing/templates/hormozi-green-444a052fceb2-poster.jpg",
+        "video": "/moonshot/landing/templates/hormozi-green-9cc4a8ae69e3.mp4"
+      },
+      {
+        "id": "aurora",
+        "name": "Aurora",
+        "treatment": "White caps with yellow and green halo emphasis.",
+        "poster": null,
+        "video": null
+      },
+      {
+        "id": "heatwave",
+        "name": "Heatwave",
+        "treatment": "Tracked white caps over a large red serif gradient.",
+        "poster": null,
+        "video": null
+      },
+      {
+        "id": "ultraviolet",
+        "name": "Ultraviolet",
+        "treatment": "Yellow-gradient caps paired with white brush script.",
+        "poster": null,
+        "video": null
+      },
+      {
+        "id": "color-block",
+        "name": "Color Block",
+        "treatment": "Lowercase Inter with one cream-and-blue banded word.",
+        "poster": null,
+        "video": null
+      },
+      {
+        "id": "loudline",
+        "name": "Loudline",
+        "treatment": "Up to nine words brighten from grey to white as they are spoken.",
+        "poster": null,
+        "video": null
+      },
+      {
+        "id": "resolve",
+        "name": "Resolve",
+        "treatment": "A huge Montserrat word meets a red handwritten accent.",
+        "poster": null,
+        "video": null
+      },
+      {
+        "id": "property-pop",
+        "name": "Property Pop",
+        "treatment": "Magenta hero words pass behind you while typed and sliding context stays in front.",
+        "poster": null,
+        "video": null
+      },
+      {
+        "id": "footage-blend",
+        "name": "Footage Blend",
+        "treatment": "One bold word blends against the footage behind it.",
+        "poster": null,
+        "video": null
+      },
+      {
+        "id": "magenta-rise",
+        "name": "Magenta Rise",
+        "treatment": "A magenta main word rises over a sliding white subline.",
+        "poster": null,
+        "video": null
+      },
+      {
+        "id": "amber-cross",
+        "name": "Amber Cross",
+        "treatment": "White Inter crosses an amber gradient hero word.",
+        "poster": null,
+        "video": null
+      },
+      {
+        "id": "red-editorial",
+        "name": "Red Editorial",
+        "treatment": "Two Playfair rows with one red italic turn.",
+        "poster": null,
+        "video": null
+      },
+      {
+        "id": "outline-reveal",
+        "name": "Outline Reveal",
+        "treatment": "Outlined Anton words fill white as they are spoken.",
+        "poster": null,
+        "video": null
+      },
+      {
+        "id": "candy-pop",
+        "name": "Candy Pop",
+        "treatment": "Two pink bubble words with a chocolate outline.",
+        "poster": null,
+        "video": null
+      },
+      {
+        "id": "paper-cut",
+        "name": "Paper Cut",
+        "treatment": "Every letter lands as a different paper cutout.",
+        "poster": null,
+        "video": null
+      },
+      {
+        "id": "beast-mode",
+        "name": "Beast Mode",
+        "treatment": "Comic caps with a fat outline; keywords glow green.",
+        "poster": "/moonshot/landing/templates/beast-mode-7553c4a47e93-poster.jpg",
+        "video": "/moonshot/landing/templates/beast-mode-800f3cb3eaef.mp4"
+      },
+      {
+        "id": "study-pill",
+        "name": "Study Pill",
+        "treatment": "Calm lowercase; the spoken word rides a white chip.",
+        "poster": null,
+        "video": null
+      },
+      {
+        "id": "old-money",
+        "name": "Old Money",
+        "treatment": "White lowercase; the spoken word just gets heavier.",
+        "poster": null,
+        "video": null
+      },
+      {
+        "id": "karaoke-bar",
+        "name": "Karaoke",
+        "treatment": "The colour wipes across each word as it&#x27;s said.",
+        "poster": "/moonshot/landing/templates/karaoke-bar-9e1ff14b1f63-poster.jpg",
+        "video": "/moonshot/landing/templates/karaoke-bar-75aea311b245.mp4"
+      },
+      {
+        "id": "tracked",
+        "name": "Tracked",
+        "treatment": "Small, wide-tracked caps \u2014 a cinematic chapter card.",
+        "poster": null,
+        "video": null
+      }
+    ]
+  },
+  {
+    "id": "desi",
+    "label": "Desi",
+    "hasAi": false,
+    "description": "Hinglish and Devanagari \u2014 one face for both scripts.",
+    "cards": [
+      {
+        "id": "desi-bold",
+        "name": "Desi Bold",
+        "treatment": "Hindi and roman in one face; hero word behind you.",
+        "poster": "/moonshot/landing/templates/desi-bold-260116819642-poster.jpg",
+        "video": "/moonshot/landing/templates/desi-bold-b6d41236a2a5.mp4"
+      }
+    ]
+  },
+  {
+    "id": "social",
+    "label": "Social",
+    "hasAi": false,
+    "description": "Clean, punchy styles for every feed.",
+    "cards": [
+      {
+        "id": "social-word-pink",
+        "name": "Rose Flare",
+        "treatment": "White text, soft rose key word.",
+        "poster": null,
+        "video": null
+      },
+      {
+        "id": "social-card",
+        "name": "Clapboard",
+        "treatment": "Black text on a clean white card.",
+        "poster": null,
+        "video": null
+      },
+      {
+        "id": "social-3d",
+        "name": "Parallax",
+        "treatment": "Blue italic, white outline, 3D edge.",
+        "poster": null,
+        "video": null
+      },
+      {
+        "id": "social-pink",
+        "name": "Magenta Gel",
+        "treatment": "Hot-pink box on the key word.",
+        "poster": null,
+        "video": null
+      },
+      {
+        "id": "social-green-word",
+        "name": "Phosphor",
+        "treatment": "Outlined white caps, green key word.",
+        "poster": null,
+        "video": null
+      },
+      {
+        "id": "social-card-purple",
+        "name": "Violet Slate",
+        "treatment": "White card, purple key word.",
+        "poster": null,
+        "video": null
+      },
+      {
+        "id": "social-caps",
+        "name": "Daylight",
+        "treatment": "Plain white all-caps with a soft shadow.",
+        "poster": null,
+        "video": null
+      },
+      {
+        "id": "social-mint",
+        "name": "Photon",
+        "treatment": "White text, bright lime key word.",
+        "poster": null,
+        "video": null
+      },
+      {
+        "id": "social-outline",
+        "name": "Contour",
+        "treatment": "White caps with a thick black outline.",
+        "poster": null,
+        "video": null
+      },
+      {
+        "id": "social-block",
+        "name": "Graphite",
+        "treatment": "Soft grey box, rose key word.",
+        "poster": null,
+        "video": null
+      },
+      {
+        "id": "social-green",
+        "name": "Greenscreen",
+        "treatment": "Green box on the key word.",
+        "poster": null,
+        "video": null
+      },
+      {
+        "id": "social-yellow",
+        "name": "Floodlight",
+        "treatment": "Yellow box, black ink on the key word.",
+        "poster": "/moonshot/landing/popular/social-yellow-b6580173d114-poster.jpg",
+        "video": "/moonshot/landing/popular/social-yellow-8efb633e312f.mp4"
+      },
+      {
+        "id": "social-greenbox",
+        "name": "Neon Reel",
+        "treatment": "Whole line on a lime bar, black ink.",
+        "poster": null,
+        "video": null
+      },
+      {
+        "id": "social-purple",
+        "name": "Violet Box",
+        "treatment": "Violet box on the key word.",
+        "poster": null,
+        "video": null
+      },
+      {
+        "id": "social-soft",
+        "name": "Halo",
+        "treatment": "White caps with a soft halo glow.",
+        "poster": null,
+        "video": null
+      },
+      {
+        "id": "social-glow",
+        "name": "Pink Neon",
+        "treatment": "White caps with a pink neon glow.",
+        "poster": "/moonshot/landing/popular/social-glow-a0f9b767884d-poster.jpg",
+        "video": "/moonshot/landing/popular/social-glow-20aed7b9f87d.mp4"
+      },
+      {
+        "id": "social-outline-heavy",
+        "name": "Blackout",
+        "treatment": "White caps, heavy black outline.",
+        "poster": null,
+        "video": null
+      },
+      {
+        "id": "social-lime-italic",
+        "name": "Tilt",
+        "treatment": "Lime italic caps with a dark outline.",
+        "poster": null,
+        "video": null
+      }
+    ]
+  },
+  {
+    "id": "speakers",
+    "label": "Speakers",
+    "hasAi": false,
+    "description": "Lower-thirds, podcast labels and quote cards for talking heads.",
+    "cards": [
+      {
+        "id": "biz-bar",
+        "name": "Anchor",
+        "treatment": "White text on a dark broadcast bar.",
+        "poster": null,
+        "video": null
+      },
+      {
+        "id": "biz-bold",
+        "name": "Keyframe",
+        "treatment": "Confident bold statement text.",
+        "poster": null,
+        "video": null
+      },
+      {
+        "id": "biz-subtitle",
+        "name": "Teleprompt",
+        "treatment": "Quiet, legible lower-third.",
+        "poster": null,
+        "video": null
+      },
+      {
+        "id": "biz-soft",
+        "name": "Penumbra",
+        "treatment": "White with a deep, soft drop shadow.",
+        "poster": null,
+        "video": null
+      },
+      {
+        "id": "biz-light",
+        "name": "Softbox",
+        "treatment": "Soft translucent bar, easy to read.",
+        "poster": null,
+        "video": null
+      },
+      {
+        "id": "biz-caps",
+        "name": "Headline",
+        "treatment": "All-caps, sober, authoritative.",
+        "poster": null,
+        "video": null
+      },
+      {
+        "id": "biz-italic",
+        "name": "Byline",
+        "treatment": "Editorial italic with a soft shadow.",
+        "poster": null,
+        "video": null
+      },
+      {
+        "id": "podcast-duo",
+        "name": "Podcast Duo",
+        "treatment": "Two-tone captions that track who&#x27;s talking.",
+        "poster": null,
+        "video": null
+      },
+      {
+        "id": "creator-badge",
+        "name": "Creator Badge",
+        "treatment": "A name-card lower third that slides in.",
+        "poster": null,
+        "video": null
+      },
+      {
+        "id": "spotlight-card",
+        "name": "Spotlight Card",
+        "treatment": "Black on a white card; the keyword boxed in yellow.",
+        "poster": null,
+        "video": null
+      },
+      {
+        "id": "whisper",
+        "name": "Whisper",
+        "treatment": "Thin lowercase, barely there. Lets the face lead.",
+        "poster": null,
+        "video": null
+      }
+    ]
+  },
+  {
+    "id": "retro",
+    "label": "Retro",
+    "hasAi": false,
+    "description": "Yellow, black, italic. Throwback energy.",
+    "cards": [
+      {
+        "id": "retro-yellow",
+        "name": "Vignette",
+        "treatment": "Yellow italic, black outline.",
+        "poster": null,
+        "video": null
+      },
+      {
+        "id": "retro-blackbox",
+        "name": "Letterbox",
+        "treatment": "White text on a solid black box.",
+        "poster": null,
+        "video": null
+      },
+      {
+        "id": "retro-pop",
+        "name": "Flashbulb",
+        "treatment": "Bold yellow with a black outline.",
+        "poster": "/moonshot/landing/popular/retro-pop-da78d3ae7dfe-poster.jpg",
+        "video": "/moonshot/landing/popular/retro-pop-ff55d4f1047e.mp4"
+      },
+      {
+        "id": "retro-italic-box",
+        "name": "Splice",
+        "treatment": "Italic white text on a black box.",
+        "poster": null,
+        "video": null
+      },
+      {
+        "id": "retro-yellow-word",
+        "name": "Filmstrip",
+        "treatment": "Black box, yellow active word.",
+        "poster": "/moonshot/landing/popular/retro-yellow-word-feb9feb40900-poster.jpg",
+        "video": "/moonshot/landing/popular/retro-yellow-word-5cb49484bfd7.mp4"
+      },
+      {
+        "id": "retro-serif",
+        "name": "Newsreel",
+        "treatment": "Heavy white italic with a clean outline.",
+        "poster": null,
+        "video": null
+      },
+      {
+        "id": "kinetic",
+        "name": "Strobe",
+        "treatment": "Words stamp in one by one \u2014 the big ones take the frame.",
+        "poster": null,
+        "video": null
+      },
+      {
+        "id": "pulse",
+        "name": "Shutter",
+        "treatment": "Huge hook word with controlled emphasis.",
+        "poster": null,
+        "video": null
+      },
+      {
+        "id": "spring",
+        "name": "Dolly",
+        "treatment": "Small setup, big keyword slides forward.",
+        "poster": "/moonshot/landing/popular/spring-cd7000e0b8cd-poster.jpg",
+        "video": "/moonshot/landing/popular/spring-0d3513f64929.mp4"
+      },
+      {
+        "id": "sweep",
+        "name": "Searchlight",
+        "treatment": "A light band scans across the words.",
+        "poster": "/moonshot/landing/popular/sweep-d16b547f2397-poster.jpg",
+        "video": "/moonshot/landing/popular/sweep-e1d3f6ac8211.mp4"
+      },
+      {
+        "id": "wave",
+        "name": "Handheld",
+        "treatment": "Handwritten emphasis for creator clips.",
+        "poster": null,
+        "video": null
+      },
+      {
+        "id": "bounce",
+        "name": "Jump Cut",
+        "treatment": "One-word punchlines held big at center.",
+        "poster": null,
+        "video": null
+      },
+      {
+        "id": "pair-impact",
+        "name": "Double Exposure",
+        "treatment": "Clean sans, key words punch out in a condensed face.",
+        "poster": null,
+        "video": null
+      },
+      {
+        "id": "pair-editorial",
+        "name": "Folio",
+        "treatment": "Modern sans with a display-serif accent word.",
+        "poster": null,
+        "video": null
+      },
+      {
+        "id": "pair-clean",
+        "name": "Telephoto",
+        "treatment": "Minimal sans, key words in tall condensed caps.",
+        "poster": null,
+        "video": null
+      },
+      {
+        "id": "pair-slab",
+        "name": "Slate",
+        "treatment": "Clean sans with one heavy slab statement word.",
+        "poster": null,
+        "video": null
+      },
+      {
+        "id": "pair-marker",
+        "name": "Handcam",
+        "treatment": "Vlog sans with a hand-marker key word.",
+        "poster": null,
+        "video": null
+      },
+      {
+        "id": "pair-script",
+        "name": "Soft Cut",
+        "treatment": "Rounded sans with a soft script accent.",
+        "poster": null,
+        "video": null
+      },
+      {
+        "id": "pair-geometric",
+        "name": "Prism",
+        "treatment": "Friendly geometric sans, bold rounded accent.",
+        "poster": null,
+        "video": null
+      },
+      {
+        "id": "pair-russo",
+        "name": "Telecast",
+        "treatment": "Sporty sans with a bold square-caps accent.",
+        "poster": null,
+        "video": null
+      },
+      {
+        "id": "pair-comic",
+        "name": "Flashframe",
+        "treatment": "Heavy sans with a comic-book punch word.",
+        "poster": null,
+        "video": null
+      },
+      {
+        "id": "pair-throwback",
+        "name": "Sepia",
+        "treatment": "Condensed sans with a typewriter accent.",
+        "poster": null,
+        "video": null
+      },
+      {
+        "id": "pair-lobster",
+        "name": "Crosscut",
+        "treatment": "Casual sans with a flowing script accent.",
+        "poster": null,
+        "video": null
+      },
+      {
+        "id": "pair-caveat",
+        "name": "Footnote",
+        "treatment": "Clean sans with a personal handwritten accent.",
+        "poster": null,
+        "video": null
+      },
+      {
+        "id": "jelly-pop",
+        "name": "Jelly Pop",
+        "treatment": "Each hook word squashes and stretches as it lands.",
+        "poster": null,
+        "video": null
+      },
+      {
+        "id": "slide-hype",
+        "name": "Slide Hype",
+        "treatment": "Bold hero lines land displaced for an off-kilter punch.",
+        "poster": null,
+        "video": null
+      },
+      {
+        "id": "wiggle-marker",
+        "name": "Wiggle Marker",
+        "treatment": "Handwritten words rock back and forth on the beat.",
+        "poster": null,
+        "video": null
+      },
+      {
+        "id": "wobble-bubble",
+        "name": "Wobble",
+        "treatment": "Wobbly bubble caps, lime fill with a bold dark outline.",
+        "poster": null,
+        "video": null
+      },
+      {
+        "id": "vallah",
+        "name": "Vallah",
+        "treatment": "The original Vallah paintbrush captions \u2014 yellow caveat-brush wordmark, no background FX.",
+        "poster": null,
+        "video": null
+      }
+    ]
+  }
+]

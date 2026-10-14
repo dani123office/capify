@@ -1,115 +1,193 @@
 "use client";
 
-import { useState } from "react";
+import { useEffect, useRef, useState } from "react";
 import { ChevronDown } from "lucide-react";
-import { TEMPLATES, POPULAR_TEMPLATES, TEMPLATE_FAMILIES, type Template } from "../_lib/templates";
+import sectionsData from "../../lib/moonshot_homepage_sections.json";
 import { TemplateCard } from "./templates/TemplateCard";
+import type { Template } from "../_lib/templates";
 
-const FAMILY_BY_TAB: Record<string, Template["family"]> = {
-  behind_person: "Behind the Person",
-  real_estate: "Behind the Person",
-  spatial: "Spatial",
-  ai_edits: "AI Edits",
-  multiline: "Multiline",
-  dynamic: "Dynamic",
-  editorial: "Editorial",
-  creators: "Creators",
-  desi: "Desi",
-  social: "Social",
-};
-
-const FAMILY_COPY: Record<string, string> = {
-  popular: "Community favourites, trending styles, and something worth trying.",
-  real_estate: "Clean styles and property tours with subtle spatial tracking.",
-  behind_person: "Words locked behind the speaker for a layered depth look.",
-  spatial: "3D spatial text that pushes and pulls with the beat.",
-  ai_edits: "One-click edits that cut the clip to the caption rhythm.",
-  multiline: "Stacked, multi-line layouts built for longer sentences.",
-  dynamic: "Karaoke flips, glows and kinetic squash-and-stretch.",
-  editorial: "High-fashion serif stacks and magazine treatments.",
-  creators: "Warm cinematic looks tuned for talking heads.",
-  desi: "Hinglish and Indic styles with native-script font pairings.",
-  social: "Box highlights and clean styles that read at small sizes.",
-};
-
-export function TemplateShowcase({
-  initial = "popular",
-  selectedId,
-  onSelectTemplate,
-}: {
-  initial?: string;
+export interface TemplateShowcaseProps {
   selectedId?: string;
   onSelectTemplate?: (t: Template) => void;
-}) {
-  const [family, setFamily] = useState(initial);
-  const [internalSelected, setInternalSelected] = useState<string>("blue-muse");
-  const selected = selectedId || internalSelected;
+}
 
-  const handleSelect = (t: Template) => {
-    setInternalSelected(t.id);
-    if (onSelectTemplate) {
-      onSelectTemplate(t);
+export function TemplateShowcase({
+  selectedId,
+  onSelectTemplate,
+}: TemplateShowcaseProps) {
+  const [activeTab, setActiveTab] = useState<string>("popular");
+  const tablistRef = useRef<HTMLDivElement>(null);
+  const isClickScrolling = useRef(false);
+
+  // Set up IntersectionObserver to update active tab highlight on scroll
+  useEffect(() => {
+    const observer = new IntersectionObserver(
+      (entries) => {
+        if (isClickScrolling.current) return;
+        for (const entry of entries) {
+          if (entry.isIntersecting) {
+            const secId = entry.target.getAttribute("data-section-id");
+            if (secId) {
+              setActiveTab(secId);
+              // Ensure the active tab button is scrolled into view in horizontal tab bar
+              const tabBtn = document.getElementById(`tab-${secId}`);
+              if (tabBtn && tablistRef.current) {
+                tabBtn.scrollIntoView({
+                  behavior: "smooth",
+                  block: "nearest",
+                  inline: "center",
+                });
+              }
+            }
+          }
+        }
+      },
+      {
+        rootMargin: "-90px 0px -70% 0px",
+        threshold: 0,
+      }
+    );
+
+    sectionsData.forEach((sec) => {
+      const el = document.getElementById(`section-${sec.id}`);
+      if (el) observer.observe(el);
+    });
+
+    return () => observer.disconnect();
+  }, []);
+
+  const scrollToSection = (secId: string) => {
+    setActiveTab(secId);
+    isClickScrolling.current = true;
+    const targetSection = document.getElementById(`section-${secId}`);
+    if (targetSection) {
+      const yOffset = -72; // height of sticky bar
+      const y =
+        targetSection.getBoundingClientRect().top + window.pageYOffset + yOffset;
+      window.scrollTo({ top: y, behavior: "smooth" });
     }
+    setTimeout(() => {
+      isClickScrolling.current = false;
+    }, 800);
   };
 
-  const list =
-    family === "popular"
-      ? POPULAR_TEMPLATES
-      : TEMPLATES.filter((t) => t.family === FAMILY_BY_TAB[family]);
-
   return (
-    <section id="templates" className="relative z-10 mx-auto max-w-6xl px-4 pb-20 sm:px-6">
-      <div className="no-scrollbar flex items-center justify-between gap-4 overflow-x-auto border-t border-slate-200/80 pb-4 pt-6">
-        <div className="flex items-center gap-6 sm:gap-8">
-          {TEMPLATE_FAMILIES.map((cat) => {
-            const isActive = family === cat.id;
-            return (
-              <button
-                key={cat.id}
-                type="button"
-                onClick={() => setFamily(cat.id)}
-                className={`relative flex items-center gap-1.5 whitespace-nowrap pb-2 text-sm font-bold transition ${
-                  isActive
-                    ? "border-b-2 border-brand text-brand"
-                    : "text-slate-500 hover:text-slate-900"
-                }`}
-              >
-                {cat.label}
-                <span className="rounded bg-brand-100 px-1.5 py-0.5 text-[9px] font-black text-brand">
-                  {cat.badge}
-                </span>
-              </button>
-            );
-          })}
+    <div id="templates" className="relative z-10 mx-auto max-w-6xl px-4 pb-24 sm:px-6">
+      {/* Sticky Top Category Tab Bar */}
+      <div className="sticky top-0 z-40 -mx-4 mb-8 bg-white/95 px-4 py-2.5 backdrop-blur-md sm:-mx-6 sm:px-6 border-b border-slate-100">
+        <div className="flex items-center justify-between gap-3">
+          {/* Horizontal scrollable tablist */}
+          <div
+            ref={tablistRef}
+            role="tablist"
+            aria-label="Template categories"
+            className="no-scrollbar flex flex-1 items-center gap-1.5 overflow-x-auto scroll-smooth py-1"
+          >
+            {sectionsData.map((sec) => {
+              const isActive = activeTab === sec.id;
+              return (
+                <button
+                  key={sec.id}
+                  id={`tab-${sec.id}`}
+                  role="tab"
+                  type="button"
+                  aria-selected={isActive}
+                  onClick={() => scrollToSection(sec.id)}
+                  className={`group relative inline-flex shrink-0 items-center gap-1.5 rounded-full px-3.5 py-1.5 text-sm font-semibold transition-all duration-200 ${
+                    isActive
+                      ? "text-brand"
+                      : "text-slate-500 hover:text-slate-900"
+                  }`}
+                >
+                  <span>{sec.label}</span>
+                  {sec.hasAi && (
+                    <span
+                      className={`rounded px-1.5 py-0.5 text-[9px] font-bold leading-none ${
+                        isActive
+                          ? "bg-brand/12 text-brand"
+                          : "bg-slate-100 text-slate-500 group-hover:bg-slate-200"
+                      }`}
+                    >
+                      AI
+                    </span>
+                  )}
+                  {isActive && (
+                    <span
+                      className="absolute inset-x-3 bottom-0 h-0.5 rounded-full bg-brand"
+                      aria-hidden="true"
+                    />
+                  )}
+                </button>
+              );
+            })}
+          </div>
+
+          {/* Right Letters Language Selector Button */}
+          <div className="flex shrink-0 items-center border-l border-slate-200 pl-2.5">
+            <button
+              type="button"
+              className="group inline-flex shrink-0 items-center gap-1 rounded-full border border-slate-200 bg-white px-3 py-1.5 text-xs font-semibold text-slate-700 shadow-2xs transition hover:border-slate-300"
+            >
+              abc <ChevronDown className="h-3 w-3 text-slate-400" />
+            </button>
+          </div>
         </div>
-        <button
-          type="button"
-          className="flex shrink-0 items-center gap-1 rounded-lg border border-slate-200 bg-white px-3 py-1.5 text-xs font-bold text-slate-700 shadow-sm transition hover:bg-slate-50"
-        >
-          abc <ChevronDown className="h-3 w-3" />
-        </button>
       </div>
 
-      <div className="mb-6 mt-4 flex items-center gap-2">
-        <span className="text-xs font-bold capitalize text-slate-900">
-          {family.replace(/_/g, " ")}
-        </span>
-        <span className="rounded bg-brand-100 px-1.5 py-0.5 text-[9px] font-black text-brand">
-          AI
-        </span>
-        <span className="ml-1 text-xs text-slate-400">{FAMILY_COPY[family]}</span>
-      </div>
+      {/* Continuous Vertical Shelf Sections */}
+      <div className="flex flex-col gap-14 sm:gap-16">
+        {sectionsData.map((sec) => (
+          <section
+            key={sec.id}
+            id={`section-${sec.id}`}
+            data-section-id={sec.id}
+            aria-label={sec.label}
+            className="flex min-w-0 scroll-mt-24 flex-col gap-4"
+          >
+            {/* Section Header */}
+            <div className="flex flex-col gap-1 sm:flex-row sm:items-baseline sm:gap-2.5">
+              <div className="flex items-center gap-2">
+                <span className="text-base font-semibold text-slate-900">
+                  {sec.label}
+                </span>
+                {sec.hasAi && (
+                  <span className="rounded bg-brand/12 px-1.5 py-0.5 text-[10px] font-bold leading-none text-brand">
+                    AI
+                  </span>
+                )}
+              </div>
+              <p className="text-xs text-slate-400 sm:text-sm">
+                {sec.description}
+              </p>
+            </div>
 
-      <div className="grid grid-cols-2 gap-4 sm:grid-cols-3 sm:gap-6 md:grid-cols-4">
-        {list.map((card) => (
-          <TemplateCard
-            key={card.id}
-            template={card}
-            selected={selected === card.id}
-            onSelect={handleSelect}
-          />
+            {/* Grid of Template Cards */}
+            <div className="grid grid-cols-2 gap-3.5 sm:grid-cols-3 sm:gap-5 md:grid-cols-4">
+              {sec.cards.map((card) => {
+                const tObj: Template = {
+                  id: card.id,
+                  name: card.name,
+                  family: sec.label as Template["family"],
+                  badge: (card as any).badge || (sec.id === "popular" ? "POPULAR" : null),
+                  font: "Inter",
+                  accentFont: "Inter",
+                  treatment: card.treatment,
+                  poster: card.poster || "",
+                  video: card.video || undefined,
+                };
+                return (
+                  <TemplateCard
+                    key={`${sec.id}-${card.id}`}
+                    template={tObj}
+                    selected={selectedId === card.id}
+                    onSelect={onSelectTemplate}
+                  />
+                );
+              })}
+            </div>
+          </section>
         ))}
       </div>
-    </section>
+    </div>
   );
 }
