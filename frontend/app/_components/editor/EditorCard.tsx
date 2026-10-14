@@ -87,8 +87,9 @@ export function EditorCard({
       }
 
       setOutput(engine.downloadUrl(video_id));
-    } catch {
-      setError(`Render engine not reachable. Please start the backend server.`);
+    } catch (err: unknown) {
+      const msg = err instanceof Error ? err.message : "Render engine not reachable. Please start the backend server.";
+      setError(msg);
       setOutput(null);
     } finally {
       setIsProcessing(false);
