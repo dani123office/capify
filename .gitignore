@@ -24,9 +24,13 @@ __pycache__/
 backend/storage/uploads/*
 backend/storage/renders/*
 backend/uploads/*
+backend/outputs/*
+backend/models/*
 !backend/storage/uploads/.gitkeep
 !backend/storage/renders/.gitkeep
 !backend/uploads/.gitkeep
+!backend/outputs/.gitkeep
+!backend/models/.gitkeep
 
 # Environment variables & secrets
 .env

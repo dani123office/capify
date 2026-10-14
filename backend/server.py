@@ -236,13 +236,17 @@ async def upload_video(file: UploadFile = File(...)):
 _WHISPER_MODEL = None
 
 
+LOCAL_WHISPER_DIR = Path(__file__).resolve().parent / "models" / "whisper-tiny"
+
+
 def _get_whisper_model():
     global _WHISPER_MODEL
     if _WHISPER_MODEL is None:
         try:
             from faster_whisper import WhisperModel
-            log.info("Loading faster-whisper tiny model...")
-            _WHISPER_MODEL = WhisperModel("tiny", device="cpu", compute_type="int8")
+            model_target = str(LOCAL_WHISPER_DIR) if (LOCAL_WHISPER_DIR / "model.bin").exists() else "tiny"
+            log.info("Loading faster-whisper model from: %s", model_target)
+            _WHISPER_MODEL = WhisperModel(model_target, device="cpu", compute_type="int8")
             log.info("faster-whisper model loaded successfully")
         except Exception as e:
             log.warning("faster-whisper not available: %s", e)
