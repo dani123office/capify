@@ -12,7 +12,9 @@ import { CtaBand } from "./sections/CtaBand";
 import { POPULAR_TEMPLATES, type Template } from "../_lib/templates";
 
 export function HomeClient() {
-  const [selectedTemplate, setSelectedTemplate] = useState<Template>(POPULAR_TEMPLATES[1] || POPULAR_TEMPLATES[0]);
+  const [selectedTemplate, setSelectedTemplate] = useState<Template>(
+    POPULAR_TEMPLATES.find((t) => t.id === "blue-muse") || POPULAR_TEMPLATES[0]
+  );
 
   const handleSelectTemplate = (t: Template) => {
     setSelectedTemplate(t);
