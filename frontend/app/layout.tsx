@@ -52,6 +52,8 @@ export const metadata: Metadata = {
   },
 };
 
+import { Suspense } from "react";
+
 export const viewport: Viewport = {
   themeColor: "#4F46E5",
 };
@@ -63,9 +65,13 @@ export default function RootLayout({ children }: LayoutProps<"/">) {
       className={`${inter.variable} ${instrumentSerif.variable} h-full`}
     >
       <body className="flex min-h-full flex-col bg-white antialiased">
-        <Header />
+        <Suspense fallback={null}>
+          <Header />
+        </Suspense>
         <div className="flex-1">{children}</div>
-        <Footer />
+        <Suspense fallback={null}>
+          <Footer />
+        </Suspense>
       </body>
     </html>
   );

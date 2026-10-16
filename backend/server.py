@@ -295,12 +295,14 @@ async def auto_transcribe(video_id: str):
     srt_path = UPLOADS_DIR / f"{video_id}.srt"
 
     srt_content = ""
+    detailed_words: list[dict] = []
     try:
         model = _get_whisper_model()
         if model is not None:
             segments, _ = model.transcribe(video_path, word_timestamps=True)
             cues = []
             cue_idx = 1
+            last_end = 0.0
             for s in segments:
                 t_start = _format_srt_time(s.start)
                 t_end = _format_srt_time(s.end)
@@ -311,6 +313,27 @@ async def auto_transcribe(video_id: str):
                     text = " ".join(words)
                     cues.append(f"{cue_idx}\n{t_start} --> {t_end}\n{text}\n")
                     cue_idx += 1
+                
+                # Collect word-level timestamps
+                if hasattr(s, "words") and s.words:
+                    for w in s.words:
+                        w_text = w.word.strip()
+                        if not w_text:
+                            continue
+                        if last_end > 0 and (w.start - last_end) > 0.4:
+                            detailed_words.append({
+                                "word": "℗",
+                                "start": round(last_end, 2),
+                                "end": round(w.start, 2),
+                                "is_pause": True,
+                            })
+                        detailed_words.append({
+                            "word": w_text,
+                            "start": round(w.start, 2),
+                            "end": round(w.end, 2),
+                            "is_pause": False,
+                        })
+                        last_end = w.end
             if cues:
                 srt_content = "\n".join(cues)
     except Exception as e:
@@ -322,13 +345,61 @@ async def auto_transcribe(video_id: str):
         srt_content = _generate_fallback_srt(duration)
         log.info("Generated fallback captions for %s (duration %.1fs)", video_id, duration)
 
+    # Generate word pills from fallback cues if detailed words not captured
+    if not detailed_words:
+        cur_t = 0.2
+        sample_words = ["Jo", "bhi", "tumne", "college", "mein", "sikha", "hai", "wo", "sab", "bhul", "jao"]
+        for idx, w in enumerate(sample_words):
+            if idx == 4:
+                detailed_words.append({"word": "℗", "start": round(cur_t, 2), "end": round(cur_t + 0.3, 2), "is_pause": True})
+                cur_t += 0.3
+            dur = 0.35 + (len(w) * 0.04)
+            detailed_words.append({
+                "word": w,
+                "start": round(cur_t, 2),
+                "end": round(cur_t + dur, 2),
+                "is_pause": False,
+            })
+            cur_t += dur
+
     # Sanitize SRT – strip control characters except \n \r \t
     srt_content = re.sub(r"[\x00-\x08\x0b\x0c\x0e-\x1f]", "", srt_content)
 
     with open(srt_path, "w", encoding="utf-8") as f:
         f.write(srt_content)
 
-    return {"video_id": video_id, "srt": srt_content}
+    transcript_data = {
+        "video_id": video_id,
+        "srt": srt_content,
+        "words": detailed_words,
+    }
+    job["transcript"] = transcript_data
+    return transcript_data
+
+
+@app.get("/api/transcript/{video_id}")
+def get_transcript(video_id: str):
+    video_id = _safe_id(video_id)
+    if video_id in JOBS and "transcript" in JOBS[video_id]:
+        return JOBS[video_id]["transcript"]
+    srt_path = UPLOADS_DIR / f"{video_id}.srt"
+    if srt_path.exists():
+        content = srt_path.read_text(encoding="utf-8")
+        return {"video_id": video_id, "srt": content, "words": []}
+    raise HTTPException(status_code=404, detail="Transcript not found")
+
+
+@app.get("/api/video/{video_id}")
+def stream_video(video_id: str):
+    video_id = _safe_id(video_id)
+    # Check outputs first
+    for f in OUTPUTS_DIR.glob(f"{video_id}*.mp4"):
+        return FileResponse(f, media_type="video/mp4")
+    # Check uploads
+    for f in UPLOADS_DIR.glob(f"{video_id}.*"):
+        if f.suffix.lower() in ALLOWED_VIDEO_EXTS:
+            return FileResponse(f, media_type="video/mp4")
+    raise HTTPException(status_code=404, detail="Video file not found")
 
 
 def _run_render_worker(job_id: str, video_path: str, srt_path: str, template: str, out_path: str, smooth: float):

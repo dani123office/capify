@@ -126,6 +126,10 @@ export function Header() {
     setUser(null);
   };
 
+  if (pathname?.startsWith("/studio")) {
+    return null;
+  }
+
   return (
     <>
       {/* ------------------------------------------------------------------- */}

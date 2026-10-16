@@ -36,6 +36,19 @@ async function toJson<T>(res: Response): Promise<T> {
   return (await res.json()) as T;
 }
 
+export type TranscriptWord = {
+  word: string;
+  start: number;
+  end: number;
+  is_pause?: boolean;
+};
+
+export type TranscriptResponse = {
+  video_id: string;
+  srt: string;
+  words?: TranscriptWord[];
+};
+
 export const engine = {
   base: API_BASE,
 
@@ -49,11 +62,16 @@ export const engine = {
     return toJson<UploadResult>(res);
   },
 
-  async transcribe(videoId: string): Promise<{ video_id: string; srt: string }> {
+  async transcribe(videoId: string): Promise<TranscriptResponse> {
     const res = await fetch(`${API_BASE}/api/transcribe/${videoId}`, {
       method: "POST",
     });
-    return toJson<{ video_id: string; srt: string }>(res);
+    return toJson<TranscriptResponse>(res);
+  },
+
+  async getTranscript(videoId: string): Promise<TranscriptResponse> {
+    const res = await fetch(`${API_BASE}/api/transcript/${videoId}`);
+    return toJson<TranscriptResponse>(res);
   },
 
   async render(input: {
@@ -82,6 +100,10 @@ export const engine = {
 
   downloadUrl(videoId: string): string {
     return `${API_BASE}/api/download/${videoId}`;
+  },
+
+  videoUrl(videoId: string): string {
+    return `${API_BASE}/api/video/${videoId}`;
   },
 };
 
