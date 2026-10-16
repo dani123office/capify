@@ -53,6 +53,32 @@ const DATA: Record<string, Competitor> = {
       { name: "Flexible Export without Token Burn", capify: true, them: false },
     ],
   },
+  "moonshot-vs-captik": {
+    slug: "moonshot-vs-captik",
+    name: "Captik",
+    tagline: "Capify vs Captik: Automated Caption Styling Compared",
+    verdict: "Captik provides basic mobile subtitle burns, but lacks deep multi-layer B-roll inserts, spatial behind-the-person occlusion, and Indian regional multilingual typography. Capify gives you a full studio suite with zero software installation.",
+    features: [
+      { name: "Behind-the-Subject Captions", capify: true, them: false },
+      { name: "B-Roll Cutaway Placement", capify: true, them: false },
+      { name: "Multi-Language Scripts (Hinglish/Devanagari)", capify: true, them: "Basic" },
+      { name: "Interactive Web Studio Editor", capify: true, them: false },
+      { name: "High-Bitrate 4K Clean Export", capify: true, them: false },
+    ],
+  },
+  "moonshot-vs-submagic": {
+    slug: "moonshot-vs-submagic",
+    name: "Submagic",
+    tagline: "Capify vs Submagic: The AI Video Editor Showdown",
+    verdict: "Submagic pioneered automated animated captions but charges high recurring monthly subscriptions with strict credit caps. Capify gives you 250+ designed styles, full behind-the-subject depth compositing, and transparent creator pricing.",
+    features: [
+      { name: "Transparent Pricing From $3/wk", capify: true, them: false },
+      { name: "Depth Segmentation Included", capify: true, them: "Paid Tier" },
+      { name: "Word-by-Word Timeline Scrubbing", capify: true, them: true },
+      { name: "Native Hindi & Indian Font Suite", capify: true, them: false },
+      { name: "Instant Zero-Credit Exports", capify: true, them: false },
+    ],
+  },
 };
 
 export function generateStaticParams() {

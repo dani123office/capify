@@ -94,10 +94,21 @@ function StudioContent({ params }: { params: Promise<{ id: string }> }) {
   const templateParam = searchParams.get("template") || "blue-muse";
 
   const [activeTool, setActiveTool] = useState<ToolType>("captions");
+  const [activeTemplateId, setActiveTemplateId] = useState(templateParam);
+  const [drawerOpen, setDrawerOpen] = useState(true);
   const [scriptMode, setScriptMode] = useState<"hinglish" | "hindi">("hinglish");
   const [words, setWords] = useState<TranscriptWord[]>(DEFAULT_WORDS_HINGLISH);
   const [editingIndex, setEditingIndex] = useState<number | null>(null);
   const [editingWordText, setEditingWordText] = useState("");
+
+  const [feathering, setFeathering] = useState(30);
+  const [occlusionDepth, setOcclusionDepth] = useState(50);
+  const [playbackRate, setPlaybackRate] = useState(1);
+  const [bgmVolume, setBgmVolume] = useState(35);
+  const [voiceDucking, setVoiceDucking] = useState(true);
+  const [punchZoom, setPunchZoom] = useState(true);
+  const [aspectRatio, setAspectRatio] = useState<"9:16" | "1:1" | "16:9">("9:16");
+  const [resolution, setResolution] = useState<"1080p" | "4K">("1080p");
 
   const [isPlaying, setIsPlaying] = useState(false);
   const [currentTime, setCurrentTime] = useState(0);
@@ -296,6 +307,237 @@ function StudioContent({ params }: { params: Promise<{ id: string }> }) {
             <span className="mt-1 text-[9px]">Settings</span>
           </button>
         </aside>
+
+        {/* Tool Side Drawer */}
+        <div className="w-64 sm:w-72 border-r border-white/10 bg-[#131318] p-4 flex flex-col z-20 overflow-y-auto shrink-0 text-left">
+          {activeTool === "styles" && (
+            <div>
+              <div className="flex items-center justify-between pb-3 border-b border-white/10">
+                <h3 className="text-sm font-bold text-white">Caption Styles</h3>
+                <span className="text-[10px] font-mono text-neutral-400">252 styles</span>
+              </div>
+              <div className="mt-3 grid grid-cols-2 gap-2">
+                {TEMPLATES.slice(0, 16).map((tpl) => (
+                  <button
+                    key={tpl.id}
+                    type="button"
+                    onClick={() => setActiveTemplateId(tpl.id)}
+                    className={`group relative aspect-[4/5] overflow-hidden rounded-xl border-2 transition text-left ${
+                      activeTemplateId === tpl.id
+                        ? "border-indigo-500 shadow-[0_0_12px_rgba(99,102,241,0.5)]"
+                        : "border-white/10 hover:border-white/30"
+                    }`}
+                  >
+                    <img
+                      src={tpl.poster}
+                      alt={tpl.name}
+                      className="absolute inset-0 h-full w-full object-cover transition group-hover:scale-105"
+                    />
+                    <div className="absolute inset-x-0 bottom-0 bg-gradient-to-t from-black/90 to-transparent p-1.5 pt-4">
+                      <span className="block truncate text-[10px] font-bold text-white">
+                        {tpl.name}
+                      </span>
+                    </div>
+                  </button>
+                ))}
+              </div>
+            </div>
+          )}
+
+          {activeTool === "adjust" && (
+            <div className="space-y-5">
+              <h3 className="text-sm font-bold text-white pb-2 border-b border-white/10">
+                Depth & Cutout Adjustments
+              </h3>
+              <div>
+                <div className="flex justify-between text-xs text-neutral-300">
+                  <span>Feathering</span>
+                  <span className="font-mono">{feathering}%</span>
+                </div>
+                <input
+                  type="range"
+                  min="0"
+                  max="100"
+                  value={feathering}
+                  onChange={(e) => setFeathering(Number(e.target.value))}
+                  className="mt-2 w-full accent-indigo-500"
+                />
+              </div>
+
+              <div>
+                <div className="flex justify-between text-xs text-neutral-300">
+                  <span>Subject Occlusion Depth</span>
+                  <span className="font-mono">{occlusionDepth}%</span>
+                </div>
+                <input
+                  type="range"
+                  min="0"
+                  max="100"
+                  value={occlusionDepth}
+                  onChange={(e) => setOcclusionDepth(Number(e.target.value))}
+                  className="mt-2 w-full accent-indigo-500"
+                />
+              </div>
+
+              <div>
+                <label className="text-xs font-semibold text-neutral-300">Speech Rate</label>
+                <div className="mt-2 grid grid-cols-4 gap-1.5">
+                  {[0.8, 1, 1.2, 1.5].map((rate) => (
+                    <button
+                      key={rate}
+                      type="button"
+                      onClick={() => {
+                        setPlaybackRate(rate);
+                        if (videoRef.current) videoRef.current.playbackRate = rate;
+                      }}
+                      className={`rounded-lg py-1 text-xs font-bold transition ${
+                        playbackRate === rate
+                          ? "bg-indigo-600 text-white"
+                          : "bg-white/5 text-neutral-400 hover:bg-white/10"
+                      }`}
+                    >
+                      {rate}×
+                    </button>
+                  ))}
+                </div>
+              </div>
+            </div>
+          )}
+
+          {(activeTool === "music" || activeTool === "voice") && (
+            <div className="space-y-4">
+              <h3 className="text-sm font-bold text-white pb-2 border-b border-white/10">
+                Audio & Background Tracks
+              </h3>
+              <div>
+                <div className="flex justify-between text-xs text-neutral-300">
+                  <span>Music Volume</span>
+                  <span className="font-mono">{bgmVolume}%</span>
+                </div>
+                <input
+                  type="range"
+                  min="0"
+                  max="100"
+                  value={bgmVolume}
+                  onChange={(e) => setBgmVolume(Number(e.target.value))}
+                  className="mt-2 w-full accent-indigo-500"
+                />
+              </div>
+
+              <label className="flex items-center justify-between text-xs text-neutral-300 pt-2 cursor-pointer">
+                <span>Auto Voice Ducking</span>
+                <input
+                  type="checkbox"
+                  checked={voiceDucking}
+                  onChange={(e) => setVoiceDucking(e.target.checked)}
+                  className="size-4 accent-indigo-500"
+                />
+              </label>
+
+              <div className="pt-2">
+                <span className="text-[11px] font-bold uppercase text-neutral-400 block mb-2">
+                  Royalty-Free Tracks
+                </span>
+                {["Lo-Fi Ambient", "Synthwave Pulse", "High Energy Vlog", "Acoustic Focus"].map(
+                  (trk, idx) => (
+                    <div
+                      key={idx}
+                      className="mb-1.5 flex items-center justify-between rounded-xl bg-white/5 p-2 text-xs hover:bg-white/10 cursor-pointer"
+                    >
+                      <span className="font-medium text-neutral-200">{trk}</span>
+                      <span className="rounded bg-indigo-600/30 px-1.5 py-0.5 text-[10px] font-bold text-indigo-300">
+                        Select
+                      </span>
+                    </div>
+                  )
+                )}
+              </div>
+            </div>
+          )}
+
+          {activeTool === "zoom" && (
+            <div className="space-y-4">
+              <h3 className="text-sm font-bold text-white pb-2 border-b border-white/10">
+                Dynamic Zoom & Punch
+              </h3>
+              <label className="flex items-center justify-between text-xs text-neutral-300 cursor-pointer">
+                <span>Punch Zoom on Keyword</span>
+                <input
+                  type="checkbox"
+                  checked={punchZoom}
+                  onChange={(e) => setPunchZoom(e.target.checked)}
+                  className="size-4 accent-indigo-500"
+                />
+              </label>
+              <p className="text-[11px] text-neutral-400 leading-relaxed">
+                Automatically zooms 1.15× on high-energy words and emotional phrases.
+              </p>
+            </div>
+          )}
+
+          {activeTool === "settings" && (
+            <div className="space-y-5">
+              <h3 className="text-sm font-bold text-white pb-2 border-b border-white/10">
+                Export Settings
+              </h3>
+              <div>
+                <label className="text-xs text-neutral-300 font-semibold block mb-2">
+                  Aspect Ratio
+                </label>
+                <div className="grid grid-cols-3 gap-1.5">
+                  {(["9:16", "1:1", "16:9"] as const).map((asp) => (
+                    <button
+                      key={asp}
+                      type="button"
+                      onClick={() => setAspectRatio(asp)}
+                      className={`rounded-lg py-1.5 text-xs font-bold transition ${
+                        aspectRatio === asp
+                          ? "bg-indigo-600 text-white"
+                          : "bg-white/5 text-neutral-400 hover:bg-white/10"
+                      }`}
+                    >
+                      {asp}
+                    </button>
+                  ))}
+                </div>
+              </div>
+
+              <div>
+                <label className="text-xs text-neutral-300 font-semibold block mb-2">
+                  Resolution
+                </label>
+                <div className="grid grid-cols-2 gap-2">
+                  {(["1080p", "4K"] as const).map((res) => (
+                    <button
+                      key={res}
+                      type="button"
+                      onClick={() => setResolution(res)}
+                      className={`rounded-lg py-1.5 text-xs font-bold transition ${
+                        resolution === res
+                          ? "bg-indigo-600 text-white"
+                          : "bg-white/5 text-neutral-400 hover:bg-white/10"
+                      }`}
+                    >
+                      {res}
+                    </button>
+                  ))}
+                </div>
+              </div>
+            </div>
+          )}
+
+          {(activeTool === "captions" || activeTool === "auto-edit" || activeTool === "b-roll" || activeTool === "stickers" || activeTool === "media") && (
+            <div className="space-y-4">
+              <div className="flex items-center justify-between pb-2 border-b border-white/10">
+                <h3 className="text-sm font-bold text-white capitalize">{activeTool} Settings</h3>
+                <span className="text-[10px] text-emerald-400 font-bold">Auto</span>
+              </div>
+              <p className="text-xs text-neutral-400 leading-relaxed">
+                Word-level timing and captions are active on the bottom timeline. You can double click any word chip to customize spelling or punctuation.
+              </p>
+            </div>
+          )}
+        </div>
 
         {/* Center Canvas */}
         <main className="relative flex flex-1 flex-col items-center justify-center bg-[#08080a] p-4 overflow-hidden">

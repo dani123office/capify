@@ -177,7 +177,31 @@ export function Header() {
               </button>
 
               {toolsDropdown && (
-                <div className="absolute left-0 top-full mt-2 w-64 overflow-hidden rounded-2xl border border-slate-200 bg-white p-2 shadow-xl shadow-slate-900/10 z-50">
+                <div className="absolute left-0 top-full mt-2 w-72 overflow-hidden rounded-2xl border border-slate-200 bg-white p-2 shadow-xl shadow-slate-900/10 z-50">
+                  <Link
+                    href="/instagram-reels-safe-zone"
+                    onClick={() => setToolsDropdown(false)}
+                    className="flex items-center gap-2.5 rounded-xl px-3 py-2.5 text-sm font-medium text-slate-700 hover:bg-slate-50 transition"
+                  >
+                    <Grid2X2 className="h-4 w-4 text-indigo-600" />
+                    Instagram reels safe zone
+                  </Link>
+                  <Link
+                    href="/hinglish-caption-generator"
+                    onClick={() => setToolsDropdown(false)}
+                    className="flex items-center gap-2.5 rounded-xl px-3 py-2.5 text-sm font-medium text-slate-700 hover:bg-slate-50 transition"
+                  >
+                    <Sparkles className="h-4 w-4 text-indigo-600" />
+                    Hinglish caption generator
+                  </Link>
+                  <Link
+                    href="/text-behind-person-video"
+                    onClick={() => setToolsDropdown(false)}
+                    className="flex items-center gap-2.5 rounded-xl px-3 py-2.5 text-sm font-medium text-slate-700 hover:bg-slate-50 transition"
+                  >
+                    <Video className="h-4 w-4 text-indigo-600" />
+                    Text behind person
+                  </Link>
                   <Link
                     href="/tools/ai-thumbnail"
                     onClick={() => setToolsDropdown(false)}
@@ -346,6 +370,30 @@ export function Header() {
                       aria-label="Tools"
                       className="mt-1 space-y-1 border-l border-slate-200 pl-2 ml-5"
                     >
+                      <Link
+                        href="/instagram-reels-safe-zone"
+                        onClick={closeMenu}
+                        className="flex min-h-11 w-full items-center gap-3 rounded-lg px-3 py-2.5 text-left text-sm font-medium text-slate-600 hover:bg-slate-50 hover:text-slate-900 transition"
+                      >
+                        <Grid2X2 className="h-4 w-4 shrink-0 text-indigo-600" />
+                        Instagram reels safe zone
+                      </Link>
+                      <Link
+                        href="/hinglish-caption-generator"
+                        onClick={closeMenu}
+                        className="flex min-h-11 w-full items-center gap-3 rounded-lg px-3 py-2.5 text-left text-sm font-medium text-slate-600 hover:bg-slate-50 hover:text-slate-900 transition"
+                      >
+                        <Sparkles className="h-4 w-4 shrink-0 text-indigo-600" />
+                        Hinglish caption generator
+                      </Link>
+                      <Link
+                        href="/text-behind-person-video"
+                        onClick={closeMenu}
+                        className="flex min-h-11 w-full items-center gap-3 rounded-lg px-3 py-2.5 text-left text-sm font-medium text-slate-600 hover:bg-slate-50 hover:text-slate-900 transition"
+                      >
+                        <Video className="h-4 w-4 shrink-0 text-indigo-600" />
+                        Text behind person
+                      </Link>
                       <Link
                         href="/tools/ai-thumbnail"
                         onClick={closeMenu}
